@@ -1,0 +1,48 @@
+/*! Variables */
+// ==========================================================================
+
+// Colors
+//============
+/* Coolors Exported Palette - https://coolors.co/generate/ffffff-d0d0d0-c0c0c0-606060-303030-000000 */
+
+:root {
+    --bg-color: #D0D0D0;
+    --font-color: #303030;
+    --primary-color: #606060;
+    --secondary-color: #C0C0C0;
+    --absolute-color: #000000;
+    --transparent-color: rgba(208, 208, 208, 0.95);
+}
+
+[data-theme="dark"] {
+    --bg-color: #303030;
+    --font-color: #D0D0D0;
+    --primary-color: #C0C0C0;
+    --secondary-color: #606060;
+    --absolute-color: #FFFFFF;
+    --transparent-color: rgba(48, 48, 48, 0.95);
+}
+
+// 29/08/2019
+// Nova proposta trobada a https://www.colorinspire.io/ (pendent d'aplicar)
+// @yellow: #FFBD2A;
+// @white: #FFFFFF;
+// @blue: #1A4B76;
+
+
+/* Self hosted fonts
+ * https://gwfh.mranftl.com/fonts/fjalla-one?subsets=latin */
+ /* fjalla-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fjalla-one-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fjalla-one-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fjalla-one-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/fjalla-one-v15-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/fjalla-one-v15-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/fjalla-one-v15-latin-regular.svg#FjallaOne') format('svg'); /* Legacy iOS */
+  }
+
