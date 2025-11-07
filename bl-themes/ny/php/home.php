@@ -15,7 +15,7 @@
         <!-- Page title -->
         <h2 class="post-title">
             <a class="" href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a>
-        </h2>        
+        </h2>
         
         <!-- Page content until the pagebreak -->
         <div><?php echo $page->contentBreak(); ?></div>
