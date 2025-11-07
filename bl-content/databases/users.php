@@ -1,0 +1,48 @@
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "admin": {
+        "nickname": "Admin",
+        "firstName": "Administrator",
+        "lastName": "",
+        "role": "admin",
+        "password": "!",
+        "salt": "68ea840f599a3",
+        "email": "",
+        "registered": "2025-10-11 11:07:03",
+        "tokenRemember": "",
+        "tokenAuth": "274f82c359b1b4b203816f2c6ee92d20",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "instagram": "",
+        "codepen": "",
+        "linkedin": "",
+        "xing": "",
+        "telegram": "",
+        "github": "",
+        "gitlab": ""
+    },
+    "nyadmin": {
+        "firstName": "",
+        "lastName": "",
+        "nickname": "",
+        "description": "",
+        "role": "admin",
+        "password": "22991bd1ba154d2a4d064636f644d466e7469b68",
+        "salt": "o#89vm3&",
+        "email": "sergidurannyssen@gmail.com",
+        "registered": "2025-10-11 11:24:17",
+        "tokenRemember": "",
+        "tokenAuth": "c73fb5956223c0e8e8c092fecfd75eef",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "codepen": "",
+        "instagram": "",
+        "github": "",
+        "gitlab": "",
+        "linkedin": "",
+        "mastodon": "",
+        "vk": ""
+    }
+}
