@@ -1,0 +1,21 @@
+/*! Pages */
+/* ==========================================================================*/
+
+/* /404 */
+.notfound {
+    height: auto;
+    min-height: calc(100vh - 20px);
+}
+
+.notfound h1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.notfound svg {
+    fill: var(--font-color);
+    margin: 0 auto;
+    width: 50%;
+    max-width: 700px;
+}

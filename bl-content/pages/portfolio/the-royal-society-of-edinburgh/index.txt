@@ -1,6 +1,6 @@
 <h3>Design &amp; Development</h3>
+<p><!-- pagebreak --></p>
 <p><strong>A project for <a href="https://www.hillside.agency/" target="_blank" aria-label="(opens in new tab)" rel="noopener">Hillside Agency</a></strong></p>
-<p><strong><!-- pagebreak --></strong></p>
 <dl>
 <dt>Role:</dt>
 <dd>UX/UI design, Style Guide, Mockups, Prototyping, Frontend and Backend (WordPress) Development</dd>

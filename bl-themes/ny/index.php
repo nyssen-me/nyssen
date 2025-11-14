@@ -14,10 +14,10 @@
 	<?php echo Theme::metaTagDescription(); ?>
 
 	<!-- Include Favicon -->
-	<?php echo Theme::favicon('img/favicon.png'); ?>
+	<?php echo Theme::favicon('assets/img/favicon.png'); ?>
 
 	<!-- Include CSS Styles from this theme -->
-	<?php echo Theme::css('css/style-min.css'); ?>
+	<?php echo Theme::css('assets/css/style-min.css'); ?>
 
 	<!-- Load Bludit Plugins: Site head -->
 	<?php Theme::plugins('siteHead'); ?>

@@ -1,0 +1,12 @@
+<h3>eCommerce Design &amp; Development</h3>
+<p><!-- pagebreak --></p>
+<dl>
+<dt>Role:</dt>
+<dd>Brainstorming and Wireframing, User flows, UX/UI design, Prototyping, Frontend and Backend (WordPress &amp; WooCommerce) Development</dd>
+<dt>Photography:</dt>
+<dd>Joan Capdevila Vallvé</dd>
+<dt>Logo Design:</dt>
+<dd>GROW</dd>
+<dt>Site URL:</dt>
+<dd><a href="https://edetaria.com/en/" target="_blank" aria-label="(opens in new tab)" rel="noopener">edetaria.com</a></dd>
+</dl>

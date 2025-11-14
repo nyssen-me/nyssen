@@ -1,82 +1,82 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 [
     {
-        "date": "2025-11-14 16:40:10",
+        "date": "2025-11-14 19:16:02",
+        "dictionaryKey": "new-content-created",
+        "notes": "Home[Autosave]",
+        "idExecution": "69177ff23a3d4",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:13:20",
+        "dictionaryKey": "content-edited",
+        "notes": "Home",
+        "idExecution": "69177f501ad0d",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:12:42",
+        "dictionaryKey": "content-edited",
+        "notes": "Home",
+        "idExecution": "69177f2a4c316",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:12:42",
+        "dictionaryKey": "content-deleted",
+        "notes": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
+        "idExecution": "69177f2a4c316",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:12:38",
+        "dictionaryKey": "new-content-created",
+        "notes": "Home[Autosave]",
+        "idExecution": "69177f26eb528",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:10:38",
+        "dictionaryKey": "content-edited",
+        "notes": "Home",
+        "idExecution": "69177eaeafb84",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-14 19:09:21",
         "dictionaryKey": "settings-changes",
         "notes": "",
-        "idExecution": "69175b6ad1d03",
+        "idExecution": "69177e61e2bf2",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 16:39:50",
-        "dictionaryKey": "settings-changes",
-        "notes": "",
-        "idExecution": "69175b569c036",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:27:08",
-        "dictionaryKey": "new-content-created",
-        "notes": "Bella Lola bikinis[Autosave]",
-        "idExecution": "6917585c3ccad",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:25:07",
-        "dictionaryKey": "content-edited",
-        "notes": "Bella Lola bikinis",
-        "idExecution": "691757e32fa67",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:23:12",
-        "dictionaryKey": "content-edited",
-        "notes": "The Royal Society of Edinburgh[Autosave]",
-        "idExecution": "691757703b431",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:21:13",
-        "dictionaryKey": "new-content-created",
-        "notes": "The Royal Society of Edinburgh",
-        "idExecution": "691756f9c83ab",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:21:11",
+        "date": "2025-11-14 19:04:42",
         "dictionaryKey": "content-edited",
         "notes": "The Royal Society of Edinburgh",
-        "idExecution": "691756f786906",
+        "idExecution": "69177d4ab2118",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 16:20:29",
-        "dictionaryKey": "new-content-created",
-        "notes": "Portfolio[Autosave]",
-        "idExecution": "691756cdea7a1",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 16:18:29",
+        "date": "2025-11-14 19:03:46",
         "dictionaryKey": "content-edited",
-        "notes": "Portfolio",
-        "idExecution": "691756554f65a",
+        "notes": "The Royal Society of Edinburgh",
+        "idExecution": "69177d128613e",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 16:17:04",
+        "date": "2025-11-14 19:02:40",
         "dictionaryKey": "content-edited",
-        "notes": "Bella Lola bikinis",
-        "idExecution": "69175600bc131",
+        "notes": "The Royal Society of Edinburgh",
+        "idExecution": "69177cd0a5773",
         "method": "POST",
         "username": "nyadmin"
     }

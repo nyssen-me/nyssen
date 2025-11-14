@@ -1,0 +1,11 @@
+<p>Hola!</p>
+<p>I’m Sergi Duran Nyssen, a wireless <strong>Web Designer &amp; Developer</strong>. I work at <a href="https://www.hillside.agency/" title="Mosaic Publicity, the integrated Marketing Agency" target="_blank" rel="noopener">Hillside Agency</a> <del>mainly for digital agency <a href="http://sokvist.com/en/" title="Sokvist, Web &amp; SEO" target="_blank" rel="noopener">Sokvist</a>, but I’m also available for freelance work</del>.</p>
+<h3>What I do</h3>
+<p>I create an effective online presence for individuals, small-sized businesses and startups. I enjoy helping people translating ideas into design. My websites are designed according to <abbr title="World Wide Web Consortium">W3C</abbr> standards, cross browser compatible, <strong>user friendly</strong> and with latest <strong><abbr title="Search Engine Optimization">SEO</abbr> trends</strong> in mind.</p>
+<p>Please visit my <a href="http://nyssen/portfolio/" title="Nyssen porfolio page">portfolio</a> to see some of the works I've done.</p>
+<h3>What I use</h3>
+<p>Besides the usual tools for web design and web development, my main tools when working on a web project are: common sense, lots of patience, enthusiasm, open-mindedness and flexibility.</p>
+<div class="thingsilike">
+<h3>Things I like</h3>
+<p>Very personal things that I like and nice memories. I will be changing them from time to time, as my taste also changes with time.</p>
+</div>

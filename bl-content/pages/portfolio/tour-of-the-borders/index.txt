@@ -1,0 +1,17 @@
+<h3>Design &amp; Development</h3>
+<p><!-- pagebreak --></p>
+<p><strong>A project for <a href="https://www.hillside.agency/" target="_blank" aria-label="(opens in new tab)" rel="noopener">Hillside Agency</a></strong></p>
+<dl>
+<dt>Role:</dt>
+<dd>UX/UI design, Style Guide, Mockups, Prototyping, Frontend and Backend (WordPress &amp; WooCommerce) Development</dd>
+<!--<dt>Photography:</dt>
+                    <dd>Irupé Miranda, Nani Pujol, Albert Ollé</dd>
+                    
+                    <dt>Model:</dt>
+                    <dd>@ainaragilf</dd>
+                    
+                    <dt>Templates URL:</dt>
+                    <dd><a href="https://www.nyssen.me/portfolio/bellalola/" target="_blank">nyssen.me/bellalola</a></dd>-->
+<dt>Site URL:</dt>
+<dd><a href="https://tourotheborders.com/" target="_blank" aria-label="(opens in new tab)" rel="noopener">tourotheborders.com</a></dd>
+</dl>

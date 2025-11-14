@@ -1,0 +1,51 @@
+/*********************************************
+* Filename: style.css
+* Website: http://nyssen.me
+* Author: Sergi Duran Nyssen
+* Author URI: http://nyssen.me
+* Date: 14/11/2025
+* Version: 3.0
+*********************************************/
+
+/* Core variables */
+@import "src/variables.css";
+
+/* Reset and dependencies */
+@import "src/reset.css";
+
+/* Universal seletors */
+@import "src/general.css";
+
+/* Helpers classes */
+@import "src/helpers.css";
+
+/* https://milligram.io */
+@import "src/buttons.css";
+/* @import "src/forms.css"; */
+@import "src/grids.css";
+
+/* Components */
+/* @import "src/cards.css"; */
+/* @import "src/lists.css"; */
+/* @import "src/blocks.css"; */
+
+/* Header classes */
+@import "src/header.css";
+
+/* Masthead classes */
+/* @import "src/masthead.css"; */
+
+/* Sections classes */
+/* @import "src/sections.css"; */
+
+/* Footer classes */
+/* @import "src/footer.css"; */
+
+/* Pages classes */
+@import "src/pages.css";
+
+/* Blog classes */
+/* @import "src/posts.css"; */
+
+/* JS plugins classes */
+/* @import "src/plugins/smartmenus.css"; */
