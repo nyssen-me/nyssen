@@ -17,16 +17,63 @@
         <h2 class="description"><?php echo $site->slogan(); ?></h2>
 
 
-		<!-- Static pages -->
 		<nav class="menu">
-			<ul>
-				<?php foreach ($staticContent as $staticPage): ?>
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo $staticPage->permalink(); ?>"><?php echo $staticPage->title(); ?></a>
-				</li>
-				<?php endforeach ?>
-			</ul>
-		</nav>
+            <ul>
+                <?php 
+                // Get current page key
+                $currentKey = isset($page) ? $page->key() : '';
+                
+                // Display static pages (pages) that are not children
+                foreach ($staticContent as $staticPage): 
+                    if (empty($staticPage->parentKey())): 
+                        $activeClass = ($currentKey == $staticPage->key()) ? 'active' : '';
+                        ?>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $staticPage->permalink(); ?>"><?php echo $staticPage->title(); ?></a>
+                        </li>
+                    <?php endif;
+                endforeach;
+                ?>
+            </ul>
+        </nav>
+
+        <!-- <nav class="menu">
+            <ul>
+                <?php 
+                // Include HOMEPAGE to menu - Combine static and non-static pages
+                // Get current page
+                global $pages;
+                
+                // Get current page key
+                $currentKey = isset($page) ? $page->key() : '';
+
+                // Get non-static pages
+                $nonStaticPages = $pages->getList(1, -1, true, false, false, false, false);
+                
+                // Get static pages
+                $staticPages = $pages->getList(1, -1, true, true, false, false, false);
+                
+                // Combine both arrays and remove duplicates
+                $allPageKeys = array_unique(array_merge($nonStaticPages, $staticPages ));
+                
+                foreach ($allPageKeys as $pageKey):
+                    if ($pages->exists($pageKey)):
+                        $menuPage = new Page($pageKey);
+                        
+                        // Only show parent pages (not children)
+                        if (empty($menuPage->parentKey())):
+                            $activeClass = ($currentKey == $menuPage->key()) ? 'active' : '';
+                            ?>
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $menuPage->permalink(); ?>"><?php echo $menuPage->title(); ?></a>
+                            </li>
+                        <?php 
+                        endif;
+                    endif;
+                endforeach;
+                ?>
+            </ul>
+        </nav> -->
 
 
 		<div class="theme-switch-wrapper">

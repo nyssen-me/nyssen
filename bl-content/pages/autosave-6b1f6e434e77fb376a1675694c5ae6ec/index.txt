@@ -1,0 +1,14 @@
+<h3>eCommerce Design &amp; Development</h3>
+<p><!-- pagebreak --></p>
+<dl>
+<dt>Role:</dt>
+<dd>Brainstorming and Wireframing, User flows, UX/UI design, Mockups, Prototyping, Frontend and Backend (WordPress &amp; WooCommerce) Development</dd>
+<dt>Photography:</dt>
+<dd>Irupé Miranda, Nani Pujol, Albert Ollé</dd>
+<dt>Model:</dt>
+<dd>@ainaragilf</dd>
+<dt>Templates URL:</dt>
+<dd><a href="https://www.nyssen.me/portfolio/bellalola/" target="_blank" aria-label="(opens in new tab)" rel="noopener">nyssen.me/bellalola</a></dd>
+<dt>Site URL:</dt>
+<dd><a href="https://bellalolabikinis.com/" target="_blank" aria-label="(opens in new tab)" rel="noopener">bellalolabikinis.com</a></dd>
+</dl>

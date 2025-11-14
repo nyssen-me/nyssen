@@ -9,7 +9,7 @@
         
         <!-- Page cover image -->
         <?php if ($page->coverImage()): ?>
-        <div class="" style="background-image: url('<?php echo $page->coverImage(); ?>');">
+        <div class="" style="background-image: url('<?php echo $page->coverImage(); ?>'); background-repeat: no-repeat; margin: 0 auto; width: 940px;">
             <div style="height: 300px;"></div>
         </div>
         <?php endif ?>
@@ -17,10 +17,6 @@
         <!-- Page content -->
         <div class="page-content"><?php echo $page->content(); ?></div>
         
-        <!-- Date posted -->
-        <?php if (!$page->isStatic() && !$url->notFound()): ?>
-        <p class="text-right"><?php echo $page->date();?></p>
-        <?php endif ?>
         
         <!-- Load Bludit Plugins: Page End -->
         <?php Theme::plugins('pageEnd'); ?>

@@ -33,12 +33,22 @@
 
 	<!-- Content -->
 	<?php
-		if ($WHERE_AM_I == 'page') {
-			include(THEME_DIR_PHP.'page.php');
-		} else {
-			include(THEME_DIR_PHP.'home.php');
-		}
-	?>
+    if ($WHERE_AM_I == 'page') {
+        // Check if page has a custom template
+        $template = $page->template();
+        $templateFile = THEME_DIR_PHP . $template . '.php';
+        
+        // Use custom template if it exists, otherwise use default page.php
+        if (file_exists($templateFile)) {
+            include($templateFile);
+        } else {
+            include(THEME_DIR_PHP . 'page.php');
+        }
+    } else {
+        include(THEME_DIR_PHP . 'home.php');
+    }
+    ?>
+
 
 	<!-- Footer -->
 	<?php include(THEME_DIR_PHP.'footer.php'); ?>
@@ -47,7 +57,7 @@
 	<script>
         // Simple page preloader https://vladdenisov.github.io/simple-page-preloader/
         /* ====================================================================== */
-        document.body.onload = function(){
+        /* document.body.onload = function(){
             setTimeout(function() {
                 var preloader = document.getElementById('loader');
                 if( !preloader.classList.contains('done') )
@@ -55,7 +65,7 @@
                     preloader.classList.add('done');
                 }
             }, 1000)
-        }
+        } */
         
         
         
@@ -130,7 +140,7 @@
         }
                 
     </script>
-    <script src="assets/js/lazysizes.min.js"></script>
+    <!-- <script src="assets/js/lazysizes.min.js"></script> -->
 
 
 	<!-- Load Bludit Plugins: Site Body End -->
