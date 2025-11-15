@@ -1,82 +1,82 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 [
     {
-        "date": "2025-11-14 19:16:02",
-        "dictionaryKey": "new-content-created",
-        "notes": "Home[Autosave]",
-        "idExecution": "69177ff23a3d4",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 19:13:20",
+        "date": "2025-11-15 10:11:53",
         "dictionaryKey": "content-edited",
-        "notes": "Home",
-        "idExecution": "69177f501ad0d",
+        "notes": "About[Autosave]",
+        "idExecution": "691851e9b850e",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 19:12:42",
-        "dictionaryKey": "content-edited",
-        "notes": "Home",
-        "idExecution": "69177f2a4c316",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 19:12:42",
-        "dictionaryKey": "content-deleted",
-        "notes": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
-        "idExecution": "69177f2a4c316",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 19:12:38",
-        "dictionaryKey": "new-content-created",
-        "notes": "Home[Autosave]",
-        "idExecution": "69177f26eb528",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 19:10:38",
-        "dictionaryKey": "content-edited",
-        "notes": "Home",
-        "idExecution": "69177eaeafb84",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-14 19:09:21",
+        "date": "2025-11-15 10:09:50",
         "dictionaryKey": "settings-changes",
         "notes": "",
-        "idExecution": "69177e61e2bf2",
+        "idExecution": "6918516e07814",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 19:04:42",
-        "dictionaryKey": "content-edited",
-        "notes": "The Royal Society of Edinburgh",
-        "idExecution": "69177d4ab2118",
+        "date": "2025-11-15 09:56:36",
+        "dictionaryKey": "new-content-created",
+        "notes": "About[Autosave]",
+        "idExecution": "69184e543b346",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 19:03:46",
+        "date": "2025-11-15 09:54:35",
         "dictionaryKey": "content-edited",
-        "notes": "The Royal Society of Edinburgh",
-        "idExecution": "69177d128613e",
+        "notes": "About",
+        "idExecution": "69184ddbaa5bb",
         "method": "POST",
         "username": "nyadmin"
     },
     {
-        "date": "2025-11-14 19:02:40",
+        "date": "2025-11-15 09:54:35",
+        "dictionaryKey": "content-deleted",
+        "notes": "autosave-9bc396099430221fa81a562a0a9bcb7d",
+        "idExecution": "69184ddbaa5bb",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-15 09:49:38",
+        "dictionaryKey": "new-content-created",
+        "notes": "Tour of the Borders[Autosave]",
+        "idExecution": "69184cb232ec6",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-15 09:47:37",
         "dictionaryKey": "content-edited",
-        "notes": "The Royal Society of Edinburgh",
-        "idExecution": "69177cd0a5773",
+        "notes": "Tour of the Borders",
+        "idExecution": "69184c39726ed",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-15 09:47:37",
+        "dictionaryKey": "content-deleted",
+        "notes": "autosave-2dd3f7400214108445611c0ce0454100",
+        "idExecution": "69184c39726ed",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-15 09:46:56",
+        "dictionaryKey": "content-edited",
+        "notes": "Tour of the Borders[Autosave]",
+        "idExecution": "69184c10e1b04",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2025-11-15 09:44:52",
+        "dictionaryKey": "settings-changes",
+        "notes": "",
+        "idExecution": "69184b94a107e",
         "method": "POST",
         "username": "nyadmin"
     }

@@ -1,3 +1,4 @@
+<p><!-- pagebreak --></p>
 <p>Hola!</p>
 <p>I’m Sergi Duran Nyssen, a wireless <strong>Web Designer &amp; Developer</strong>. I work at <a href="https://www.hillside.agency/" title="Mosaic Publicity, the integrated Marketing Agency" target="_blank" rel="noopener">Hillside Agency</a> <del>mainly for digital agency <a href="http://sokvist.com/en/" title="Sokvist, Web &amp; SEO" target="_blank" rel="noopener">Sokvist</a>, but I’m also available for freelance work</del>.</p>
 <h3>What I do</h3>

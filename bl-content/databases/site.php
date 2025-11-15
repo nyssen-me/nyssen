@@ -45,5 +45,5 @@
     "thumbnailHeight": 400,
     "thumbnailQuality": 100,
     "markdownParser": true,
-    "customFields": "[]"
+    "customFields": "{\r\n    &quot;subtitle&quot;: {\r\n        &quot;type&quot;: &quot;string&quot;,\r\n        &quot;label&quot;: &quot;Subtitle&quot;,\r\n        &quot;placeholder&quot;: &quot;Subtitle for the page&quot;\r\n    }\r\n}"
 }

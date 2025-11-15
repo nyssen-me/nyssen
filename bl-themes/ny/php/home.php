@@ -50,6 +50,48 @@
 
 
     <section>
+        <div class="container padding-top-none">
+            <div class="row">
+                <div class="column">
+
+                <?php
+                    // Embedded pages - Get pages by slug
+                    global $pages;
+                    $pageKeys = array(
+                        'about'
+                    );
+                    foreach ($pageKeys as $pageKey) {
+                        if ($pages->exists($pageKey)) {
+                            $currentPage = new Page($pageKey);
+                            ?>
+
+                                <h2><?php echo $currentPage->title(); ?></h2>
+
+
+                                <?php if ($currentPage->description()): ?>
+                                    <p class="excerpt"><?php echo $currentPage->description(); ?></p>
+                                <?php endif; ?>
+                                
+                                
+                                <?php if ($currentPage->readMore()): // Page content until the pagebreak ?>
+                                    <div><?php echo $currentPage->contentBreak(); ?></div>
+                                    <a class="button" href="<?php echo $currentPage->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+                                <?php else: ?>
+                                    <div><?php echo $currentPage->content(); ?></div>
+                                <?php endif; ?>
+
+                            <?php
+                        }
+                    }
+                    ?>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
         <div class="container">
             <div class="row">
                 <div class="column">
@@ -71,8 +113,8 @@
                                 <li>
                                     <h2><?php echo $currentPage->title(); ?></h2>
                                     
-                                    <!-- Page cover image -->
-                                    <?php if ($currentPage->coverImage()): ?>
+                                    
+                                    <?php if ($currentPage->coverImage()): // Page cover image ?>
                                         <?php
                                         // Get image path - coverImage() returns URL, we need the file path
                                         $imageUrl = $currentPage->coverImage();
@@ -91,9 +133,14 @@
                                             height="<?php echo $height; ?>"
                                             <?php endif; ?>>
                                     <?php endif; ?>
+
+
+                                    <?php if ($currentPage->description()): ?>
+                                        <p class="excerpt"><?php echo $currentPage->description(); ?></p>
+                                    <?php endif; ?>
                                     
-                                    <!-- Page content until the pagebreak -->
-                                    <?php if ($currentPage->readMore()): ?>
+                                    
+                                    <?php if ($currentPage->readMore()): // Page content until the pagebreak ?>
                                         <div><?php echo $currentPage->contentBreak(); ?></div>
                                         <a class="button" href="<?php echo $currentPage->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
                                     <?php else: ?>

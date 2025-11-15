@@ -1,5 +1,52 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
+        "title": "About[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2025-11-15 09:56:36",
+        "dateModified": "2025-11-15 10:11:53",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "f956a56fca6a8ed42d51c08aa7dc2671",
+        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
+    "autosave-2dd3f7400214108445611c0ce0454100": {
+        "title": "Tour of the Borders[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2025-11-15 09:49:38",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "29699c46cb82f02d70c81c8b942def55",
+        "uuid": "autosave-2dd3f7400214108445611c0ce0454100",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
     "autosave-f8309a8ddb5e1bdb1d62f236feb0603d": {
         "title": "Home[Autosave]",
         "description": "",
@@ -18,18 +65,24 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "portfolio\/tour-of-the-borders": {
         "title": "Tour of the Borders",
-        "description": "",
+        "description": "This is the description of the Touro!",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2025-11-14 18:42:54",
-        "dateModified": "2025-11-14 19:01:52",
+        "dateModified": "2025-11-15 09:47:37",
         "position": 14,
         "coverImage": "tour-o-the-border.webp",
         "category": "",
@@ -40,9 +93,12 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "portfolio\/edet\u00e0ria-organic-grenache-wines": {
         "title": "Edet\u00e0ria - Organic Grenache Wines",
@@ -62,9 +118,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "autosave-6b1f6e434e77fb376a1675694c5ae6ec": {
         "title": "Bella Lola bikinis[Autosave]",
@@ -84,31 +146,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
-    },
-    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
-        "title": "About[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-14 17:31:37",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "0a50f530fdb27d26d67b2699d189c1b4",
-        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "portfolio\/bella-lola-bikinis": {
         "title": "Bella Lola bikinis",
@@ -128,9 +174,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "portfolio\/the-royal-society-of-edinburgh": {
         "title": "The Royal Society of Edinburgh",
@@ -150,9 +202,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "autosave-6398229086fabec37ddeb68f748b1279": {
         "title": "Project 1[Autosave]",
@@ -172,9 +230,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "portfolio": {
         "title": "Portfolio",
@@ -194,9 +258,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "home": {
         "title": "Home",
@@ -216,30 +286,39 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "excerpt": {
+                "value": ""
+            },
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "about": {
         "title": "About",
-        "description": "",
+        "description": "This is the description of the About page.",
         "username": "admin",
         "tags": [],
         "type": "static",
         "date": "2025-10-11 11:03:03",
-        "dateModified": "2025-11-14 17:29:36",
+        "dateModified": "2025-11-15 09:54:35",
         "position": 5,
         "coverImage": "",
         "category": "general",
-        "md5file": "b48befa4d488d4c796c8a1e0519dffb6",
+        "md5file": "82d79760761bfcef17a3206137648d45",
         "uuid": "9bc396099430221fa81a562a0a9bcb7d",
         "allowComments": true,
         "template": "",
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            }
+        }
     }
 }
