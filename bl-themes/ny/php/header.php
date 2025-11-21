@@ -33,6 +33,78 @@
         </ul>
     </nav>
 
+    <nav class="menu-alt">
+        <ul>
+            <?php 
+            global $pages;
+            
+            // Get current page key
+            $currentKey = isset($page) ? $page->key() : '';
+            
+            // Define your custom menu items by slug
+            $menuItems = array('about', 'portfolio', 'portfolio/tour-of-the-borders');
+            
+            foreach ($menuItems as $pageKey):
+                if ($pages->exists($pageKey)):
+                    $menuPage = new Page($pageKey);
+                    $activeClass = ($currentKey == $pageKey) ? 'active' : '';
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $menuPage->permalink(); ?>"><?php echo $menuPage->title(); ?></a>
+                    </li>
+                <?php 
+                endif;
+            endforeach;
+            ?>
+        </ul>
+    </nav>
+
+    <nav class="menu-alt">
+        <ul>
+            <?php 
+            global $pages;
+            
+            // Get current page key
+            $currentKey = isset($page) ? $page->key() : '';
+            
+            // About page
+            if ($pages->exists('about')):
+                $aboutPage = new Page('about');
+                $activeClass = ($currentKey == 'about') ? 'active' : '';
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $aboutPage->permalink(); ?>"><?php echo $aboutPage->title(); ?></a>
+                </li>
+            <?php endif; ?>
+            
+            <?php 
+            // Portfolio page
+            if ($pages->exists('portfolio')):
+                $portfolioPage = new Page('portfolio');
+                $activeClass = ($currentKey == 'portfolio') ? 'active' : '';
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $portfolioPage->permalink(); ?>"><?php echo $portfolioPage->title(); ?></a>
+                </li>
+            <?php endif; ?>
+            
+            <li>
+                <ul>
+                    <?php 
+                // sub portfolio
+                if ($pages->exists('portfolio/tour-of-the-borders')):
+                    $contactPage = new Page('portfolio/tour-of-the-borders');
+                    $activeClass = ($currentKey == 'portfolio/tour-of-the-borders') ? 'active' : '';
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $activeClass; ?>" href="<?php echo $contactPage->permalink(); ?>"><?php echo $contactPage->title(); ?></a>
+                    </li>
+                <?php endif; ?>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <!-- <nav class="menu">
         <ul>
             <?php 
