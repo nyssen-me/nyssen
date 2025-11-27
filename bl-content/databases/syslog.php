@@ -1,6 +1,14 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 [
     {
+        "date": "2025-11-21 11:49:45",
+        "dictionaryKey": "new-content-created",
+        "notes": "Portfolio[Autosave]",
+        "idExecution": "692051d91a87d",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
         "date": "2025-11-15 10:11:53",
         "dictionaryKey": "content-edited",
         "notes": "About[Autosave]",
@@ -69,14 +77,6 @@
         "dictionaryKey": "content-edited",
         "notes": "Tour of the Borders[Autosave]",
         "idExecution": "69184c10e1b04",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:44:52",
-        "dictionaryKey": "settings-changes",
-        "notes": "",
-        "idExecution": "69184b94a107e",
         "method": "POST",
         "username": "nyadmin"
     }

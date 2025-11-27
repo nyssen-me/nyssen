@@ -13,11 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="humans.txt">
 
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../apple-touch-icon.png" /><!-- 57×57px -->
-    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png"><!-- 180×180px -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" /><!-- 57×57px -->
+    <link rel="apple-touch-icon-precomposed" href="./apple-touch-icon-precomposed.png"><!-- 180×180px -->
 
-    <link rel="stylesheet" href="../assets/css/style-min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="canonical" href="https://nyssen.me/">
     
@@ -57,21 +57,14 @@
     <meta property="og:url" content="https://nyssen.me/">
     <meta property="og:site_name" content="Nyssen - Web Design &amp; Development">
     <meta property="og:locale" content="en">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Jørgen Mortensen">
-    <meta name="twitter:description" content="I am a creative freelance web designer & front-end developer specialising in HTML5, CSS3, PWA & WordPress. I design user & SEO friendly websites.">
-    <meta name="twitter:image" content="http://jorgenmortensen.com/assets/images/twitter-image.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@iorgenmortensen">
-    <meta name="twitter:url" content="https://nyssen.me/">
+
     <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 	
 </head>
 <body>
     
     <!-- loader -->
-	<div class="loader-body" id="loader">
+	<div class="loader-body" id="loader" role="status" aria-live="polite">
 		<div class="loader"></div>
 	</div>
 	<!-- /loader -->
@@ -89,13 +82,13 @@
         <nav class="menu">
             <ul>
                 <li class="active"><a href="/" title="Home">Home</a></li>
-                <li><a href="/about/" title="About page">About</a></li>
+                <li><a href="./about/" title="About page">About</a></li>
             </ul>
         </nav>
         
         <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
+            <label class="theme-switch" for="checkbox" title="Toggle light and dark themes">
+                <input type="checkbox" id="checkbox" aria-label="Toggle light and dark themes" />
                 <div class="slider round"></div>
             </label>
             <em>Dark Mode</em>
@@ -114,10 +107,31 @@
         
         <div class="spotlight">
             <div class="copy">
-                <p><i>Tour of the Borders</i></p>
-                <h3>eCommerce Design & Development</h3>
+                <p><i>The Royal Society of Edinburgh</i></p>
+                <h3>Design & Development</h3>
 
-                <p><strong>A project for <a href="https://www.hillside.agency/" target="_blank">Hillside Agency</a></strong></p>
+                <p><strong>A project for <a href="https://www.hillside.agency/" target="_blank" aria-label="(opens in new tab)">Hillside Agency</a></strong></p>
+                
+                <dl>
+                    <dt>Role:</dt>
+                    <dd>UX/UI design, Style Guide, Mockups, Prototyping, Frontend and Backend (WordPress) Development</dd>
+                    
+                    <dt>Site URL:</dt>
+                    <dd><a href="https://rse.org.uk/" target="_blank" aria-label="(opens in new tab)">rse.org.uk</a></dd>
+                </dl>
+            </div>
+
+            <div class="image">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-rse.jpg" alt="The Royal Society of Edinburgh" width="1050" height="1440">
+            </div>
+        </div>
+
+        <div class="spotlight">
+            <div class="copy">
+                <p><i>Tour of the Borders</i></p>
+                <h3>Design & Development</h3>
+
+                <p><strong>A project for <a href="https://www.hillside.agency/" target="_blank" aria-label="(opens in new tab)">Hillside Agency</a></strong></p>
                 
                 <dl>
                     <dt>Role:</dt>
@@ -133,12 +147,12 @@
                     <dd><a href="https://www.nyssen.me/portfolio/bellalola/" target="_blank">nyssen.me/bellalola</a></dd>-->
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://tourotheborders.com/" target="_blank">tourotheborders.com</a></dd>
+                    <dd><a href="https://tourotheborders.com/" target="_blank" aria-label="(opens in new tab)">tourotheborders.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-touro.jpg" alt="Tour of the Borders" width="940" height="1616">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-touro.jpg" alt="Tour of the Borders" width="940" height="1616">
             </div>
         </div>
         
@@ -158,15 +172,15 @@
                     <dd>@ainaragilf</dd>
                     
                     <dt>Templates URL:</dt>
-                    <dd><a href="https://www.nyssen.me/portfolio/bellalola/" target="_blank">nyssen.me/bellalola</a></dd>
+                    <dd><a href="https://www.nyssen.me/portfolio/bellalola/" target="_blank" aria-label="(opens in new tab)">nyssen.me/bellalola</a></dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://bellalolabikinis.com/" target="_blank">bellalolabikinis.com</a></dd>
+                    <dd><a href="https://bellalolabikinis.com/" target="_blank" aria-label="(opens in new tab)">bellalolabikinis.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-bellalola-1.jpg" alt="Bellalola bikinis" width="940" height="1567">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-bellalola-1.jpg" alt="Bellalola bikinis" width="940" height="1567">
             </div>
         </div>
         
@@ -186,12 +200,12 @@
                     <dd>GROW</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://edetaria.com/en/" target="_blank">edetaria.com</a></dd>
+                    <dd><a href="https://edetaria.com/en/" target="_blank" aria-label="(opens in new tab)">edetaria.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-edetaria.jpg" alt="" width="940" height="940">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-edetaria.jpg" alt="" width="940" height="940">
             </div>
         </div>
         
@@ -211,12 +225,12 @@
                     <dd>Judit Figueiras</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://sokvist.com/" target="_blank">sokvist.com</a></dd>
+                    <dd><a href="https://sokvist.com/" target="_blank" aria-label="(opens in new tab)">sokvist.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-sokvist-2.jpg" alt="Sokvist, Web & Marketing" width="940" height="777"> 
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-sokvist-2.jpg" alt="Sokvist, Web & Marketing" width="940" height="777"> 
             </div>
         </div>
         
@@ -235,7 +249,7 @@
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-papelycarton.jpg" alt="Vegio, papel y cartón" width="940" height="1521"> 
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-papelycarton.jpg" alt="Vegio, papel y cartón" width="940" height="1521"> 
             </div>
         </div>
         
@@ -255,12 +269,12 @@
                     <dd>Ian Pridham</dd>
                     
                     <dt>Templates URL:</dt>
-                    <dd><a href="https://nyssen.me/portfolio/pure/" target="_blank">nyssen.me/pure</a></dd>
+                    <dd><a href="https://nyssen.me/portfolio/pure/" target="_blank" aria-label="(opens in new tab)">nyssen.me/pure</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-pure-2.jpg" alt="The Pure Agency" width="940" height="1007">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-pure-2.jpg" alt="The Pure Agency" width="940" height="1007">
             </div>
         </div>
         
@@ -280,12 +294,12 @@
                     <dd>Judit Figueiras</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="http://cosmic.cat/" target="_blank">cosmic.cat</a></dd>
+                    <dd><a href="http://cosmic.cat/" target="_blank" aria-label="(opens in new tab)">cosmic.cat</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-cosmic-2.jpg" alt="Client: Còsmic Vinyaters" width="940" height="677">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-cosmic-2.jpg" alt="Client: Còsmic Vinyaters" width="940" height="677">
             </div>
         </div>
         
@@ -305,12 +319,12 @@
                     <dd>Radu Mazanec</dd>
                     
                     <dt>Templates URL:</dt>
-                    <dd><a href="https://nyssen.me/portfolio/rosermartinez/" target="_blank">nyssen.me/rosermartinez</a></dd>
+                    <dd><a href="https://nyssen.me/portfolio/rosermartinez/" target="_blank" aria-label="(opens in new tab)">nyssen.me/rosermartinez</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-rosermartinez-2.jpg" alt="Roser Martinez Creative Jewelery" width="940" height="700">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-rosermartinez-2.jpg" alt="Roser Martinez Creative Jewelery" width="940" height="700">
             </div>
         </div>
         
@@ -327,12 +341,12 @@
                     <dd>David Domenech</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://www.tavernadelasal.com/" target="_blank">www.tavernadelasal.com</a></dd>
+                    <dd><a href="https://www.tavernadelasal.com/" target="_blank" aria-label="(opens in new tab)">www.tavernadelasal.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-tavernadelasal-2.jpg" alt="Boutique Hotel Taverna de la Sal" width="940" height="1240">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-tavernadelasal-2.jpg" alt="Boutique Hotel Taverna de la Sal" width="940" height="1240">
             </div>
         </div>
         
@@ -352,12 +366,12 @@
                     <dd>Judit Figueiras</dd>
                     
                     <dt>Templates URL:</dt>
-                    <dd><a href="https://sokvist.com/easyshop/" target="_blank">www.sokvist.com/easyshop/</a></dd>
+                    <dd><a href="https://sokvist.com/easyshop/" target="_blank" aria-label="(opens in new tab)">www.sokvist.com/easyshop/</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-easyshop-2.jpg" alt="Easy Shop Theme for Sokvist" width="940" height="1528">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-easyshop-2.jpg" alt="Easy Shop Theme for Sokvist" width="940" height="1528">
             </div>
         </div>
         
@@ -374,12 +388,12 @@
                     <dd>Tom Rapacioli</dd>
                     
                     <dt>Templates URL:</dt>
-                    <dd><a href="https://nyssen.me/portfolio/zoelee/" target="_blank">nyssen.me/zoelee</a></dd>
+                    <dd><a href="https://nyssen.me/portfolio/zoelee/" target="_blank" aria-label="(opens in new tab)">nyssen.me/zoelee</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-zoelee-2.jpg" alt="Zoe Lee Shoes Designer" width="940" height="1074">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-zoelee-2.jpg" alt="Zoe Lee Shoes Designer" width="940" height="1074">
             </div>
         </div>
         
@@ -396,36 +410,15 @@
                     <dd>David Domenech</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://sokvist.com/columpiu/" target="_blank">columpiu.com</a></dd>
+                    <dd><a href="https://sokvist.com/columpiu/" target="_blank" aria-label="(opens in new tab)">columpiu.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-columpiu-mobile.jpg" alt="WordPress Theme for Columpiu" width="940" height="588">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-columpiu-mobile.jpg" alt="WordPress Theme for Columpiu" width="940" height="588">
             </div>
         </div>
-        
-        <div class="spotlight">
-            <div class="copy">
-                <p><i>CIJTE</i></p>
-                <h3>Design & Website Development</h3>
-                
-                <dl>
-                    <dt>Role:</dt>
-                    <dd>User research, User flows, UX/UI design, Prototyping, Frontend and Backend (WordPress & WooCommerce) Development</dd>
-                    
-                    <dt>Marketing Strategy:</dt>
-                    <dd>Judit Figueiras</dd>
-                    
-                    <dt>Site URL:</dt>
-                    <dd><a href="http://lajota.cat/" target="_blank">lajota.cat</a></dd>
-                </dl>
-            </div>
 
-            <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-lajota-2.jpg" alt="CIJTE - Casa de la Jota" width="940" height="627">
-            </div>
-        </div>
         
         <div class="spotlight">
             <div class="copy">
@@ -443,12 +436,12 @@
                     <dd>Judit Figueiras</dd>
                     
                     <dt>Site URL:</dt>
-                    <dd><a href="https://www.lagaviota.com/" target="_blank">lagaviota.com</a></dd>
+                    <dd><a href="https://www.lagaviota.com/" target="_blank" aria-label="(opens in new tab)">lagaviota.com</a></dd>
                 </dl>
             </div>
 
             <div class="image">
-                <img class="lazyload" data-src="../assets/images/portfolio/showcase-lagaviota-2.jpg" alt="Camping La Gaviota" width="940" height="815">
+                <img class="lazyload" data-src="./assets/images/portfolio/showcase-lagaviota-2.jpg" alt="Camping La Gaviota" width="940" height="815">
             </div>
         </div>
         
@@ -461,9 +454,9 @@
 
             <div class="image">
                 <div class="branding">
-                    <img class="lazyload" data-src="../assets/images/portfolio/rollup-bellalola.jpg" alt="Branding - banner design" width="500" height="1177">
-                    <img class="lazyload" data-src="../assets/images/portfolio/rollup-vinsdelmar.jpg" alt="Branding - banner design" width="500" height="1177">
-                    <img class="lazyload" data-src="../assets/images/portfolio/rollup-masalba.jpg" alt="Branding - banner design" width="500" height="1177">
+                    <img class="lazyload" data-src="./assets/images/portfolio/rollup-bellalola.jpg" alt="Branding - banner design" width="500" height="1177">
+                    <img class="lazyload" data-src="./assets/images/portfolio/rollup-vinsdelmar.jpg" alt="Branding - banner design" width="500" height="1177">
+                    <img class="lazyload" data-src="./assets/images/portfolio/rollup-masalba.jpg" alt="Branding - banner design" width="500" height="1177">
                 </div>
             </div>
         </div>
@@ -476,21 +469,21 @@
 
             <div class="image">
                 <div class="branding">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-lasal-2.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-marjal-2.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-joncols-1.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-montsecuines.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-masguso.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-lagaviota-2.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-oliventallo.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-lasal-1.jpg" alt="Social media branding" width="500" height="500">
-                    <img class="lazyload" data-src="../assets/images/portfolio/social-onanem-1.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-lasal-2.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-marjal-2.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-joncols-1.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-montsecuines.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-masguso.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-lagaviota-2.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-oliventallo.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-lasal-1.jpg" alt="Social media branding" width="500" height="500">
+                    <img class="lazyload" data-src="./assets/images/portfolio/social-onanem-1.jpg" alt="Social media branding" width="500" height="500">
                 </div>
             </div>
         </div>
         
         <div class="intro">
-            <p>Thank you for taking your time to browse my portfolio, I really appreciate it. The PDF version is available to download <a href="https://nyssen.me/docs/portfolio-nyssen.pdf" title="Nyssen portfolio in PDF" target="_blank">here</a>.</p>
+            <p>Thank you for taking your time to browse my portfolio, I really appreciate it. The PDF version is available to download <a href="https://nyssen.me/docs/portfolio-nyssen.pdf" title="Nyssen portfolio in PDF" target="_blank" aria-label="(opens in new tab)">here</a>.</p>
         </div>
         
     </section>
@@ -499,13 +492,13 @@
     <footer class="contact">
         <h2>Contact</h2>
 
-        <p>Interested in collaborating? Please email me at <a href="mailto:sergiduran@nyssen.me" title="Send an email to Sergi">sergiduran<!--antispam code-->@<!--va-bene-->nyssen.me</a> and I’ll reply the soonest possible. <del>Are you in a hurry? Then skype me at <a href="skype:sergi.loup?call" title="Call Sergi via Skype">sergi.loup</a> or, if you have the chance, lets meet over a coffee <a href="https://goo.gl/maps/XbvKVRR814oA1MfA9" title="Panaderia Can Font in Sant Pere Pescador" target="_blank">here</a></del>.</p>
+        <p>Interested in collaborating? Please email me at <a href="mailto:sergiduran@nyssen.me" title="Send an email to Sergi">sergiduran<!--antispam code-->@<!--va-bene-->nyssen.me</a> and I’ll reply the soonest possible. <del>Are you in a hurry? Then skype me at <a href="skype:sergi.loup?call" title="Call Sergi via Skype">sergi.loup</a> or, if you have the chance, lets meet over a coffee <a href="https://goo.gl/maps/XbvKVRR814oA1MfA9" title="Panaderia Can Font in Sant Pere Pescador" target="_blank" aria-label="(opens in new tab)">here</a></del>.</p>
 
-        <p>Need to know a bit more about me? Visit my <a href="https://www.linkedin.com/in/sergiduran" title="Sergi in Linkedin" target="_blank">Linkedin</a>, <a href="https://twitter.com/nyssen_me" title="Sergi in Twitter" target="_blank">Twitter</a> and <a href="https://www.instagram.com/nyssen.me/" title="Sergi in Instagram" target="_blank">Instagram</a> accounts or our Sokvist <a href="http://sokvist.com/en/about/" title="Sokvist About us page" target="_blank">About page</a>.</p>
+        <p>Need to know a bit more about me? Visit my <a href="https://www.linkedin.com/in/sergiduran" title="Sergi in Linkedin" target="_blank" aria-label="(opens in new tab)">Linkedin</a>, <a href="https://twitter.com/nyssen_me" title="Sergi in Twitter" target="_blank" aria-label="(opens in new tab)">Twitter</a> and <a href="https://www.instagram.com/nyssen.me/" title="Sergi in Instagram" target="_blank" aria-label="(opens in new tab)">Instagram</a> accounts or our Sokvist <a href="http://sokvist.com/en/about/" title="Sokvist About us page" target="_blank" aria-label="(opens in new tab)">About page</a>.</p>
         
         <ul class="subfooter">
-            <li><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Creative Commons licence Attribution-NonCommercial 4.0 International" target="_blank">CC BY-NC</a></li>
-            <li><a href="https://bitbucket.org/sokvistweb/nyssen/" title="Source Code for nyssen.me website" target="_blank">Source Code</a></li>
+            <li><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Creative Commons licence Attribution-NonCommercial 4.0 International" target="_blank" aria-label="(opens in new tab)">CC BY-NC</a></li>
+            <li><a href="https://bitbucket.org/sokvistweb/nyssen/" title="Source Code for nyssen.me website" target="_blank" aria-label="(opens in new tab)">Source Code</a></li>
             <li><a href="accessibility.html" title="Accessibility Policy page">Accessibility Policy</a></li>
         </ul>
         

@@ -1,5 +1,27 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-a3009da89c523420f6a6c02b619efd14": {
+        "title": "Portfolio[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2025-11-21 11:49:45",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "ddb9ff758690c7d3a8f934a7a2a5f196",
+        "uuid": "autosave-a3009da89c523420f6a6c02b619efd14",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
     "autosave-9bc396099430221fa81a562a0a9bcb7d": {
         "title": "About[Autosave]",
         "description": "",
