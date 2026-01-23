@@ -1,0 +1,30 @@
+/*! Footer */
+/* ==========================================================================*/
+
+.subfooter {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 6em 0 0;
+    font-size: 0.75em;
+    justify-content: left;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.subfooter li {
+    margin: 0 0.5em;
+}
+
+.subfooter a {
+    color: var(--font-color);
+    border-bottom: 1px dotted var(--font-color);
+    text-decoration: none;
+    margin: 0 0.5em;
+    padding: 0.25em 0;
+}
+
+.subfooter a:hover,
+.subfooter a:focus {
+    border-bottom-color: transparent;
+}

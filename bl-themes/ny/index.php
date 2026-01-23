@@ -7,23 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="Bludit">
 
-	<!-- Dynamic title tag -->
-	<?php echo Theme::metaTagTitle(); ?>
+	<?php echo Theme::metaTagTitle(); // Dynamic title tag ?>
 
-	<!-- Dynamic description tag -->
-	<?php echo Theme::metaTagDescription(); ?>
+	<?php echo Theme::metaTagDescription(); // Dynamic description tag ?>
 
-	<!-- Include Favicon -->
-	<?php echo Theme::favicon('assets/img/favicon.png'); ?>
+	<link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-precomposed.png">
 
-	<!-- Include CSS Styles from this theme -->
-	<?php echo Theme::css('assets/css/style-min.css'); ?>
+	<?php echo Theme::css('assets/css/style.css?ver=1.0'); ?>
 
-	<!-- Load Bludit Plugins: Site head -->
-	<?php Theme::plugins('siteHead'); ?>
+    <link rel="canonical" href="https://nyssen.me/">
+
+    <!-- Prevent theme flash - applies saved theme before render -->
+    <script>
+        (function() {
+            try {
+                var theme = localStorage.getItem('accessibility-theme');
+                var font = localStorage.getItem('accessibility-font');
+                var cursor = localStorage.getItem('accessibility-cursor');
+                var links = localStorage.getItem('accessibility-links');
+                var images = localStorage.getItem('accessibility-images');
+                var root = document.documentElement;
+
+                // Apply theme
+                if (theme) {
+                    root.classList.add(theme);
+                } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    root.classList.add('dark-theme');
+                } else if (window.matchMedia('(prefers-contrast: high)').matches) {
+                    root.classList.add('high-contrast');
+                } else {
+                    root.classList.add('light-theme');
+                }
+
+                // Apply other saved preferences
+                if (font) root.setAttribute('data-selected-font', font);
+                if (cursor === 'active') root.setAttribute('data-cursor', 'big-cursor');
+                if (links === 'active') root.setAttribute('data-links', 'highlight');
+                if (images === 'active') root.setAttribute('data-images', 'images-hidden');
+            } catch (e) {}
+        })();
+    </script>
+
+	<?php Theme::plugins('siteHead'); // Load Bludit Plugins: Site head ?>
 </head>
 
-<body>
+<body id="top">
 
 	<!-- Load Bludit Plugins: Site Body Begin -->
 	<?php Theme::plugins('siteBodyBegin'); ?>
@@ -55,89 +87,626 @@
 
 
 	<script>
-        // Simple page preloader https://vladdenisov.github.io/simple-page-preloader/
-        /* ====================================================================== */
-        /* document.body.onload = function(){
-            setTimeout(function() {
-                var preloader = document.getElementById('loader');
-                if( !preloader.classList.contains('done') )
-                {
-                    preloader.classList.add('done');
+        
+        /**
+         * Accessibility Toolkit
+         * WCAG 2.1 AA Compliant
+         *
+         * Free to use, modify, and share.
+         * Repository: https://github.com/nyssen-me/Accessibility-Toolkit
+         *
+         * @author Sergi Duran (nyssen.me)
+         * @license MIT
+         */
+
+        // Utility: Shared keyboard navigation for radio groups
+        const handleRadioKeyNav = (e, buttons) => {
+            const buttonsArray = Array.from(buttons);
+            const currentIndex = buttonsArray.indexOf(e.currentTarget);
+            let nextIndex = null;
+
+            switch(e.key) {
+                case 'ArrowRight':
+                case 'ArrowDown':
+                    e.preventDefault();
+                    nextIndex = (currentIndex + 1) % buttonsArray.length;
+                    break;
+                case 'ArrowLeft':
+                case 'ArrowUp':
+                    e.preventDefault();
+                    nextIndex = (currentIndex - 1 + buttonsArray.length) % buttonsArray.length;
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    nextIndex = 0;
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    nextIndex = buttonsArray.length - 1;
+                    break;
+            }
+
+            if (nextIndex !== null) {
+                buttonsArray[nextIndex].focus();
+                buttonsArray[nextIndex].click();
+            }
+        };
+
+        // Utility: LocalStorage helper
+        const storage = {
+            get: (key, defaultValue = null) => {
+                try {
+                    return localStorage.getItem(key) || defaultValue;
+                } catch (e) {
+                    console.warn(`Failed to load ${key}:`, e);
+                    return defaultValue;
                 }
-            }, 1000)
-        } */
-        
-        
-        
-        // Theme color switcher 
-        // https://codepen.io/ananyaneogi/pen/zXZyMP
-        /* ====================================================================== */
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            else {        document.documentElement.setAttribute('data-theme', 'light');
-                  localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-        
-        
-        
-        // Scroll to top button implementation in vanilla JavaScript (ES6 - ECMAScript 6) 
-        // https://codepen.io/joshuamasen/pen/OYaYbL
-        /* ====================================================================== */
-        // Set a variable for our button element.
-        const scrollToTopButton = document.getElementById('js-top');
-
-        // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
-        const scrollFunc = () => {
-            // Get the current scroll value
-            let y = window.scrollY;
-
-            // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-            if (y > 800) {
-                scrollToTopButton.className = "top-link show";
-            } else {
-                scrollToTopButton.className = "top-link hide";
+            },
+            set: (key, value) => {
+                try {
+                    localStorage.setItem(key, value);
+                } catch (e) {
+                    console.warn(`Failed to save ${key}:`, e);
+                }
+            },
+            remove: (key) => {
+                try {
+                    localStorage.removeItem(key);
+                } catch (e) {
+                    console.warn(`Failed to remove ${key}:`, e);
+                }
             }
         };
 
-        window.addEventListener("scroll", scrollFunc);
+        class AccessibilityWidgetController {
+            constructor(options = {}) {
+                // Configuration
+                this.toggleButtonSelector = options.toggleButton || '.accessibility-toggle-btn';
+                this.panelSelector = options.panel || '.accessibility-widget-panel';
+                this.backdropSelector = options.backdrop || '.accessibility-widget-backdrop';
 
-        const scrollToTop = () => {
-            // Let's set a variable for the number of pixels we are from the top of the document.
-            const c = document.documentElement.scrollTop || document.body.scrollTop;
+                // Elements
+                this.toggleButtons = document.querySelectorAll(this.toggleButtonSelector);
+                this.panel = document.querySelector(this.panelSelector);
+                this.backdrop = document.querySelector(this.backdropSelector);
 
-            // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
-            // We'll also animate that scroll with requestAnimationFrame:
-            // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-            if (c > 0) {
-                window.requestAnimationFrame(scrollToTop);
-                // ScrollTo takes an x and a y coordinate.
-                // Increase the '10' value to get a smoother/slower scroll!
-                window.scrollTo(0, c - c / 20);
+                // State
+                this.isOpen = false;
+                this.focusedElementBeforeOpen = null;
+                this.focusableElements = [];
+
+                // Validate required elements
+                if (this.toggleButtons.length === 0 || !this.panel) {
+                    console.error('AccessibilityWidget: Required elements not found');
+                    return;
+                }
+
+                // Bind methods
+                this.handleClickOutside = this.handleClickOutside.bind(this);
+                this.handleKeyDown = this.handleKeyDown.bind(this);
+
+                this.init();
             }
-        };
 
-        // When the button is clicked, run our ScrolltoTop function above!
-        scrollToTopButton.onclick = function(e) {
-            e.preventDefault();
-            scrollToTop();
+            init() {
+                this.updateFocusableElements();
+
+                // Toggle buttons
+                this.toggleButtons.forEach(button => {
+                    button.addEventListener('click', () => this.toggle());
+                });
+
+                // Close button
+                const closeButton = this.panel.querySelector('.widget-close-btn');
+                if (closeButton) {
+                    closeButton.addEventListener('click', () => this.close());
+                }
+
+                // Backdrop
+                if (this.backdrop) {
+                    this.backdrop.addEventListener('click', () => this.close());
+                }
+            }
+
+            updateFocusableElements() {
+                if (!this.panel) return;
+
+                const focusableSelectors = 'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+                this.focusableElements = Array.from(this.panel.querySelectorAll(focusableSelectors));
+            }
+
+            toggle() {
+                this.isOpen ? this.close() : this.open();
+            }
+
+            open() {
+                this.isOpen = true;
+                this.focusedElementBeforeOpen = document.activeElement;
+
+                // Update ARIA and visibility
+                this.toggleButtons.forEach(button => button.setAttribute('aria-expanded', 'true'));
+                this.panel.setAttribute('aria-hidden', 'false');
+                this.panel.setAttribute('data-open', 'true');
+
+                if (this.backdrop) {
+                    this.backdrop.setAttribute('aria-hidden', 'false');
+                    this.backdrop.style.display = 'block';
+                }
+
+                // Attach document listeners only when open
+                document.addEventListener('click', this.handleClickOutside);
+                document.addEventListener('keydown', this.handleKeyDown);
+
+                // Focus management
+                if (this.focusableElements[0]) {
+                    setTimeout(() => this.focusableElements[0].focus(), 100);
+                }
+            }
+
+            close() {
+                this.isOpen = false;
+
+                // Update ARIA and visibility
+                this.toggleButtons.forEach(button => button.setAttribute('aria-expanded', 'false'));
+                this.panel.setAttribute('aria-hidden', 'true');
+                this.panel.setAttribute('data-open', 'false');
+
+                if (this.backdrop) {
+                    this.backdrop.setAttribute('aria-hidden', 'true');
+                    this.backdrop.style.display = 'none';
+                }
+
+                // Remove document listeners when closed
+                document.removeEventListener('click', this.handleClickOutside);
+                document.removeEventListener('keydown', this.handleKeyDown);
+
+                // Return focus
+                if (this.focusedElementBeforeOpen && this.focusedElementBeforeOpen.focus) {
+                    this.focusedElementBeforeOpen.focus();
+                } else {
+                    const visibleButton = Array.from(this.toggleButtons).find(btn => btn.offsetParent !== null);
+                    if (visibleButton) visibleButton.focus();
+                }
+            }
+
+            handleClickOutside(e) {
+                // Use closest() for efficient check
+                if (e.target.closest(this.panelSelector) || e.target.closest(this.toggleButtonSelector)) {
+                    return;
+                }
+                this.close();
+            }
+
+            handleKeyDown(e) {
+                // Escape key
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    this.close();
+                    return;
+                }
+
+                // Tab key - trap focus within panel
+                if (e.key === 'Tab' && this.focusableElements.length > 0) {
+                    const first = this.focusableElements[0];
+                    const last = this.focusableElements[this.focusableElements.length - 1];
+
+                    if (this.focusableElements.length === 1) {
+                        e.preventDefault();
+                        first.focus();
+                    } else if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            }
         }
+
+
+        /**
+         * Theme Manager - Display Modes (Light, Dark, Contrast, Greyscale)
+         */
+        class ThemeManager {
+            constructor() {
+                this.storageKey = 'accessibility-theme';
+                this.buttons = document.querySelectorAll('.theme-button');
+
+                if (this.buttons.length === 0) return;
+
+                this.init();
+            }
+
+            init() {
+                // Load saved theme or detect system preference
+                const savedTheme = storage.get(this.storageKey);
+                this.applyTheme(savedTheme || this.detectSystemTheme());
+
+                // Watch for system theme changes only if no manual preference
+                if (!savedTheme) this.watchSystemTheme();
+
+                // Bind events
+                this.buttons.forEach(button => {
+                    button.addEventListener('click', (e) => this.handleThemeChange(e));
+                    button.addEventListener('keydown', (e) => handleRadioKeyNav(e, this.buttons));
+                });
+            }
+
+            detectSystemTheme() {
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    return 'dark-theme';
+                }
+                if (window.matchMedia('(prefers-contrast: high)').matches) {
+                    return 'high-contrast';
+                }
+                return 'light-theme';
+            }
+
+            watchSystemTheme() {
+                const handleChange = (query, darkTheme, lightTheme) => {
+                    query.addEventListener('change', (e) => {
+                        if (!storage.get(this.storageKey)) {
+                            this.applyTheme(e.matches ? darkTheme : lightTheme);
+                        }
+                    });
+                };
+
+                handleChange(window.matchMedia('(prefers-color-scheme: dark)'), 'dark-theme', 'light-theme');
+                handleChange(window.matchMedia('(prefers-contrast: high)'), 'high-contrast', 'light-theme');
+            }
+
+            handleThemeChange(e) {
+                const theme = e.currentTarget.dataset.theme;
+                if (!theme) return;
+
+                const themeMap = {
+                    'light': 'light-theme',
+                    'dark': 'dark-theme',
+                    'contrast': 'high-contrast',
+                    'greyscale': 'greyscale'
+                };
+
+                const themeClass = themeMap[theme] || 'light-theme';
+                this.applyTheme(themeClass);
+                storage.set(this.storageKey, themeClass);
+            }
+
+            applyTheme(theme) {
+                const root = document.documentElement;
+                root.className = root.className.replace(/\b(light-theme|dark-theme|high-contrast|greyscale)\b/g, '');
+                root.classList.add(theme);
+
+                // Update system preference badge visibility
+                const systemBadge = document.getElementById('theme-system-badge');
+                if (systemBadge) {
+                    systemBadge.style.display = storage.get(this.storageKey) ? 'none' : 'inline-flex';
+                }
+
+                // Update aria-checked states
+                const themeMap = {
+                    'light-theme': 'light',
+                    'dark-theme': 'dark',
+                    'high-contrast': 'contrast',
+                    'greyscale': 'greyscale'
+                };
+
+                this.buttons.forEach(button => {
+                    button.setAttribute('aria-checked', button.dataset.theme === themeMap[theme] ? 'true' : 'false');
+                });
+            }
+        }
+
+
+        /**
+         * Font Manager - Text Controls (Normal, Large, Bold)
+         */
+        class FontManager {
+            constructor() {
+                this.storageKey = 'accessibility-font';
+                this.buttons = document.querySelectorAll('[data-font]');
+
+                if (this.buttons.length === 0) return;
+
+                this.init();
+            }
+
+            init() {
+                // Load saved font
+                this.applyFont(storage.get(this.storageKey, 'normal'));
+
+                // Bind events
+                this.buttons.forEach(button => {
+                    button.addEventListener('click', (e) => this.handleFontChange(e));
+                    button.addEventListener('keydown', (e) => handleRadioKeyNav(e, this.buttons));
+                });
+            }
+
+            handleFontChange(e) {
+                const font = e.currentTarget.dataset.font;
+                if (font) {
+                    this.applyFont(font);
+                    storage.set(this.storageKey, font);
+                }
+            }
+
+            applyFont(font) {
+                document.documentElement.setAttribute('data-selected-font', font);
+
+                // Update aria-checked states
+                this.buttons.forEach(button => {
+                    button.setAttribute('aria-checked', button.dataset.font === font ? 'true' : 'false');
+                });
+            }
+        }
+
+
+        /**
+         * Visual Aid Toggle Manager (Cursor, Links, Images)
+         */
+        class VisualAidManager {
+            constructor(options) {
+                this.storageKey = `accessibility-${options.type}`;
+                this.button = document.querySelector(options.selector);
+                this.attribute = options.attribute;
+                this.activeValue = options.activeValue;
+                this.inactiveValue = options.inactiveValue;
+
+                if (!this.button) return;
+
+                // Load saved state and apply
+                this.setState(storage.get(this.storageKey) === 'active');
+
+                // Bind events
+                this.button.addEventListener('click', () => this.toggle());
+            }
+
+            toggle() {
+                const isActive = document.documentElement.getAttribute(this.attribute) === this.inactiveValue;
+                this.setState(isActive);
+                storage.set(this.storageKey, isActive ? 'active' : 'inactive');
+            }
+
+            setState(isActive) {
+                document.documentElement.setAttribute(this.attribute, isActive ? this.activeValue : this.inactiveValue);
+                this.button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            }
+        }
+
+
+        /**
+         * Reading Mask Manager
+         * Creates a focus overlay that follows the cursor to help with reading
+         */
+        class ReadingMaskManager {
+            constructor() {
+                this.storageKey = 'accessibility-reading-mask';
+                this.button = document.querySelector('.js__reading-mask-toggle');
+                this.isActive = false;
+                this.maskHeight = 60;
+                this.rafId = null;
+                this.currentY = window.innerHeight / 2;
+
+                if (!this.button) return;
+
+                this.createMask();
+
+                // Load saved state
+                if (storage.get(this.storageKey) === 'active') {
+                    this.activate();
+                }
+
+                // Bind events
+                this.button.addEventListener('click', () => this.toggle());
+            }
+
+            createMask() {
+                this.maskElement = document.createElement('div');
+                this.maskElement.className = 'reading-mask';
+                this.maskElement.setAttribute('aria-hidden', 'true');
+                this.maskElement.style.display = 'none';
+                this.maskElement.innerHTML = `
+                    <div class="reading-mask-top"></div>
+                    <div class="reading-mask-line"></div>
+                    <div class="reading-mask-bottom"></div>
+                `;
+                document.body.appendChild(this.maskElement);
+
+                // Store references
+                [this.topMask, this.readingLine, this.bottomMask] = this.maskElement.children;
+            }
+
+            toggle() {
+                this.isActive ? this.deactivate() : this.activate();
+            }
+
+            activate() {
+                this.isActive = true;
+                this.maskElement.style.display = 'block';
+                this.button.setAttribute('aria-pressed', 'true');
+
+                // Bind events with arrow functions to preserve context
+                this.handleMove = (e) => {
+                    this.currentY = e.touches ? e.touches[0].clientY : e.clientY;
+                    if (!this.rafId) {
+                        this.rafId = requestAnimationFrame(() => {
+                            this.updateMaskPosition(this.currentY);
+                            this.rafId = null;
+                        });
+                    }
+                };
+
+                document.addEventListener('mousemove', this.handleMove);
+                document.addEventListener('touchmove', this.handleMove);
+
+                // Initial position
+                this.updateMaskPosition(this.currentY);
+                storage.set(this.storageKey, 'active');
+            }
+
+            deactivate() {
+                this.isActive = false;
+                this.maskElement.style.display = 'none';
+                this.button.setAttribute('aria-pressed', 'false');
+
+                document.removeEventListener('mousemove', this.handleMove);
+                document.removeEventListener('touchmove', this.handleMove);
+
+                if (this.rafId) {
+                    cancelAnimationFrame(this.rafId);
+                    this.rafId = null;
+                }
+
+                storage.set(this.storageKey, 'inactive');
+            }
+
+            updateMaskPosition(mouseY) {
+                const halfHeight = this.maskHeight / 2;
+                const topHeight = Math.max(0, mouseY - halfHeight);
+                const bottomTop = mouseY + halfHeight;
+
+                this.topMask.style.height = `${topHeight}px`;
+                this.readingLine.style.top = `${topHeight}px`;
+                this.readingLine.style.height = `${this.maskHeight}px`;
+                this.bottomMask.style.top = `${bottomTop}px`;
+                this.bottomMask.style.height = `calc(100vh - ${bottomTop}px)`;
+            }
+        }
+
+
+        /**
+         * Reset Manager
+         */
+        class ResetManager {
+            constructor(managers) {
+                this.managers = managers;
+                this.button = document.getElementById('resetButton');
+
+                if (!this.button) return;
+
+                this.button.addEventListener('click', () => this.resetAll());
+            }
+
+            resetAll() {
+                // Clear all localStorage keys
+                ['theme', 'font', 'cursor', 'links', 'images', 'reading-mask'].forEach(key =>
+                    storage.remove(`accessibility-${key}`)
+                );
+
+                // Reset to defaults
+                const root = document.documentElement;
+                root.className = root.className.replace(/\b(dark-theme|high-contrast|greyscale)\b/g, '');
+                root.classList.add('light-theme');
+                root.setAttribute('data-selected-font', 'normal');
+                root.setAttribute('data-cursor', 'normal-cursor');
+                root.setAttribute('data-links', 'no-highlight');
+                root.setAttribute('data-images', 'images-mode');
+
+                // Update UI states
+                this.managers.theme?.applyTheme('light-theme');
+                this.managers.font?.applyFont('normal');
+                this.managers.cursor?.setState(false);
+                this.managers.links?.setState(false);
+                this.managers.images?.setState(false);
+                if (this.managers.readingMask?.isActive) {
+                    this.managers.readingMask.deactivate();
+                }
+
+                // Announce to screen readers
+                const announcement = document.createElement('div');
+                announcement.setAttribute('role', 'status');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.className = 'sr-only';
+                announcement.textContent = 'All accessibility settings have been reset to defaults';
+                document.body.appendChild(announcement);
+                setTimeout(() => announcement.remove(), 1000);
+            }
+        }
+
+
+        /**
+         * Initialize All Managers
+         */
+        function initAccessibilityWidget() {
+            // Initialize widget controller
+            const widgetController = new AccessibilityWidgetController({
+                toggleButton: '.accessibility-toggle-btn',
+                panel: '.accessibility-widget-panel',
+                backdrop: '.accessibility-widget-backdrop'
+            });
+            
+            // Initialize feature managers
+            const managers = {
+                theme: new ThemeManager(),
+                font: new FontManager(),
+                cursor: new VisualAidManager({
+                    type: 'cursor',
+                    selector: '.js__cursor-toggle',
+                    attribute: 'data-cursor',
+                    activeValue: 'big-cursor',
+                    inactiveValue: 'normal-cursor'
+                }),
+                links: new VisualAidManager({
+                    type: 'links',
+                    selector: '.js__links-toggle',
+                    attribute: 'data-links',
+                    activeValue: 'highlight',
+                    inactiveValue: 'no-highlight'
+                }),
+                images: new VisualAidManager({
+                    type: 'images',
+                    selector: '.js__images-toggle',
+                    attribute: 'data-images',
+                    activeValue: 'images-hidden',
+                    inactiveValue: 'images-mode'
+                }),
+                readingMask: new ReadingMaskManager()
+            };
+            
+            // Initialize reset manager
+            new ResetManager(managers);
+            
+            return { widgetController, managers };
+        }
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAccessibilityWidget);
+        } else {
+            initAccessibilityWidget();
+        }
+        
+        
+        
+        // Scroll to top button
+        (function() {
+            const button = document.getElementById('js-top');
+            if (!button) return;
+
+            const SCROLL_THRESHOLD = 800;
+
+            // Show/hide button based on scroll position
+            const toggleButtonVisibility = () => {
+                const isVisible = window.scrollY > SCROLL_THRESHOLD;
+                button.classList.toggle('show', isVisible);
+                button.classList.toggle('hide', !isVisible);
+            };
+
+            // Use passive listener for better scroll performance
+            window.addEventListener('scroll', toggleButtonVisibility, { passive: true });
+
+            // Scroll to top on click
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Initial state check
+            toggleButtonVisibility();
+        })();
                 
     </script>
     <!-- <script src="assets/js/lazysizes.min.js"></script> -->

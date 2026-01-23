@@ -39,7 +39,7 @@
 /* @import "src/sections.css"; */
 
 /* Footer classes */
-/* @import "src/footer.css"; */
+@import "src/footer.css";
 
 /* Pages classes */
 @import "src/pages.css";
@@ -48,4 +48,4 @@
 /* @import "src/posts.css"; */
 
 /* JS plugins classes */
-/* @import "src/plugins/smartmenus.css"; */
+@import "src/plugins/accessibility-tools.css";

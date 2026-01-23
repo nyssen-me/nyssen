@@ -1,14 +1,109 @@
 /*! Header */
 /* ==========================================================================*/
 
-.site-header {
+.main-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     height: auto;
+    padding: 1.5rem 2rem;
 }
 
+/* Logo */
 .logo {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 10rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
+
+.logo:hover,
+.logo:focus {
+    text-decoration: none;
+    color: var(--absolute-color);
+}
+
+.nyssen {
+    font-size: 6.8rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 3rem;
+	margin: 0 auto 2.5rem;
+    text-transform: lowercase;
+    font-style: italic;
+    letter-spacing: -0.025em;
+}
+
+.line {
+    display: block;
+    height: 4rem;
+    margin-top: -0.25em;
+    position: relative;
+}
+
+.line svg {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--primary-color);
+    transition: fill 0.3s ease-in-out;
+}
+
+.logo:hover .line svg,
+.logo:focus .line svg {
+    fill: var(--absolute-color);
+}
+
+.line:after,
+.line:before {
+    position: absolute;
+    content: '';
+    background: var(--primary-color);
+    height: 0.15rem;
+    max-width: 3rem;
+    width: 100%;
+    margin-top: 1.9rem;
+    margin-bottom: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.line:before {
+    right: 50%;
+    margin-right: 3.2rem;
+}
+
+.line:after {
+    left: 50%;
+    margin-left: 3.2rem;
+}
+
+.logo:hover .line:after,
+.logo:hover .line:before,
+.logo:focus .line:after,
+.logo:focus .line:before {
+    background: var(--absolute-color);
+    width: 50%;
+}
+
+/* Main navigation */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    align-items: center;
+}
+
+.main-nav ul li a {
+    font-size: var(--body-font-size-lg);
+    text-decoration-thickness: max(1.5px, .15rem);
+    text-underline-offset: .3rem;
+    letter-spacing: 0.05em;
+    transition: 0.3s all;
+}
+

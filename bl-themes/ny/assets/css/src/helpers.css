@@ -125,11 +125,12 @@
     position: absolute;
     top: -100px;
     left: 0;
-    width: 100%;
+    width: auto;
     font-size: 1.6rem;
-    background: var(--secondary);
-    color: var(--font-primary);
-    padding: 1rem;
+    background: var(--absolute-color-alt);
+    color: var(--font-color);
+    padding: 1rem 2rem;
+    margin: 0.7rem;
 	z-index: 999;
 }
 

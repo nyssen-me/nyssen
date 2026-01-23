@@ -1,3 +1,7 @@
-<p>Home: Sit eu est velit culpa. Aliquip officia commodo esse elit exercitation amet incididunt quis non. Anim et laboris exercitation sit occaecat excepteur. Esse ut nulla ea labore culpa do id cillum.</p>
+<p>Home: Sit eu est velit culpa. Aliquip officia commodo esse elit <a href="#">exercitation</a> amet incididunt quis non. Anim et laboris exercitation sit occaecat excepteur. Esse ut nulla ea <a href="#">labore culpa</a> do id cillum.</p>
+<h1>Heading H1</h1>
+<h2>Heading H2</h2>
+<h3>Heading H3</h3>
+<h4>Heading H4</h4>
 <p>Tempor ad pariatur incididunt Lorem cillum ea aliqua aliquip. Duis magna tempor occaecat ex id cupidatat commodo esse sint veniam ex aute magna commodo. Dolor sit voluptate esse consectetur velit consequat labore ipsum. Nisi nulla duis eu ut in minim veniam aliquip commodo occaecat tempor ex ipsum. Deserunt tempor proident aliqua sunt.</p>
 <p><a class="button" href="http://nyssen/about" title="Learn more about me">About</a></p>

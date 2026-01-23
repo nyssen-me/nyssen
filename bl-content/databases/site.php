@@ -1,6 +1,6 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
-    "title": "nyssen.me",
+    "title": "Digital Accessibility Services",
     "slogan": "Nyssen, Digital Accessibility Specialist \/ SME",
     "description": "I am a creative freelance web designer &amp; front-end developer specialising in HTML5, CSS3, PWA &amp; WordPress. I design user &amp; SEO friendly websites.",
     "footer": "Copyright \u00a9 2025",

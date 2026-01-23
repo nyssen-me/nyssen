@@ -1,5 +1,27 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-f8309a8ddb5e1bdb1d62f236feb0603d": {
+        "title": "Home[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-01-23 10:30:08",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "a294a91faf68fd00d0bba9d1428332d8",
+        "uuid": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
     "autosave-a3009da89c523420f6a6c02b619efd14": {
         "title": "Portfolio[Autosave]",
         "description": "",
@@ -18,9 +40,12 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "autosave-9bc396099430221fa81a562a0a9bcb7d": {
         "title": "About[Autosave]",
@@ -40,9 +65,12 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "autosave-2dd3f7400214108445611c0ce0454100": {
         "title": "Tour of the Borders[Autosave]",
@@ -64,34 +92,6 @@
         "noarchive": false,
         "custom": {
             "0": false,
-            "subtitle": {
-                "value": ""
-            }
-        }
-    },
-    "autosave-f8309a8ddb5e1bdb1d62f236feb0603d": {
-        "title": "Home[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-14 19:16:02",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "e1ea6f95168317c47544137d9ce6527b",
-        "uuid": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             }
@@ -297,11 +297,11 @@
         "tags": [],
         "type": "published",
         "date": "2025-10-11 11:11:05",
-        "dateModified": "2025-11-14 19:13:20",
+        "dateModified": "2026-01-23 10:28:08",
         "position": 2,
         "coverImage": "",
         "category": "",
-        "md5file": "7bda2c841b579e4de323663c56d00ad0",
+        "md5file": "e55ed24aa91e7577ad4ac500f21fc4fe",
         "uuid": "f8309a8ddb5e1bdb1d62f236feb0603d",
         "allowComments": true,
         "template": "",
@@ -309,10 +309,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             }

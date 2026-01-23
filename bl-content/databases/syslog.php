@@ -1,6 +1,62 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 [
     {
+        "date": "2026-01-23 10:30:08",
+        "dictionaryKey": "new-content-created",
+        "notes": "Home[Autosave]",
+        "idExecution": "69734db06e31d",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 10:28:08",
+        "dictionaryKey": "content-edited",
+        "notes": "Home",
+        "idExecution": "69734d382ad12",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 10:28:08",
+        "dictionaryKey": "content-deleted",
+        "notes": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
+        "idExecution": "69734d382ad12",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 10:24:55",
+        "dictionaryKey": "new-content-created",
+        "notes": "Home[Autosave]",
+        "idExecution": "69734c776f2a6",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 10:22:54",
+        "dictionaryKey": "content-edited",
+        "notes": "Home",
+        "idExecution": "69734bfea9e9a",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 10:22:54",
+        "dictionaryKey": "content-deleted",
+        "notes": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
+        "idExecution": "69734bfea9e9a",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-01-23 06:17:00",
+        "dictionaryKey": "settings-changes",
+        "notes": "",
+        "idExecution": "6973125cb548b",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
         "date": "2025-11-21 11:49:45",
         "dictionaryKey": "new-content-created",
         "notes": "Portfolio[Autosave]",
@@ -21,62 +77,6 @@
         "dictionaryKey": "settings-changes",
         "notes": "",
         "idExecution": "6918516e07814",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:56:36",
-        "dictionaryKey": "new-content-created",
-        "notes": "About[Autosave]",
-        "idExecution": "69184e543b346",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:54:35",
-        "dictionaryKey": "content-edited",
-        "notes": "About",
-        "idExecution": "69184ddbaa5bb",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:54:35",
-        "dictionaryKey": "content-deleted",
-        "notes": "autosave-9bc396099430221fa81a562a0a9bcb7d",
-        "idExecution": "69184ddbaa5bb",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:49:38",
-        "dictionaryKey": "new-content-created",
-        "notes": "Tour of the Borders[Autosave]",
-        "idExecution": "69184cb232ec6",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:47:37",
-        "dictionaryKey": "content-edited",
-        "notes": "Tour of the Borders",
-        "idExecution": "69184c39726ed",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:47:37",
-        "dictionaryKey": "content-deleted",
-        "notes": "autosave-2dd3f7400214108445611c0ce0454100",
-        "idExecution": "69184c39726ed",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2025-11-15 09:46:56",
-        "dictionaryKey": "content-edited",
-        "notes": "Tour of the Borders[Autosave]",
-        "idExecution": "69184c10e1b04",
         "method": "POST",
         "username": "nyadmin"
     }
