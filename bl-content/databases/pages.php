@@ -1,26 +1,52 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
-    "autosave-f8309a8ddb5e1bdb1d62f236feb0603d": {
-        "title": "Home[Autosave]",
+    "elements": {
+        "title": "Elements",
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "autosave",
-        "date": "2026-01-23 10:30:08",
-        "dateModified": "",
-        "position": 0,
+        "type": "static",
+        "date": "2026-02-06 16:12:32",
+        "dateModified": "2026-02-06 16:30:00",
+        "position": 90,
         "coverImage": "",
         "category": "",
-        "md5file": "a294a91faf68fd00d0bba9d1428332d8",
-        "uuid": "autosave-f8309a8ddb5e1bdb1d62f236feb0603d",
+        "md5file": "c483915103b6a5b0481a856eba1e3a02",
+        "uuid": "ea469802ef28cf1e5e5de19cc4e8b364",
         "allowComments": true,
         "template": "",
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
+    "services": {
+        "title": "Services",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-02-06 16:10:10",
+        "dateModified": "2026-02-06 16:11:10",
+        "position": 3,
+        "coverImage": "",
+        "category": "",
+        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "uuid": "e0d2c7be83ad3e4d44c20d1d6d2aca46",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
     },
     "autosave-a3009da89c523420f6a6c02b619efd14": {
         "title": "Portfolio[Autosave]",
@@ -35,31 +61,6 @@
         "category": "",
         "md5file": "ddb9ff758690c7d3a8f934a7a2a5f196",
         "uuid": "autosave-a3009da89c523420f6a6c02b619efd14",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            }
-        }
-    },
-    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
-        "title": "About[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-15 09:56:36",
-        "dateModified": "2025-11-15 10:11:53",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "f956a56fca6a8ed42d51c08aa7dc2671",
-        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
         "allowComments": true,
         "template": "",
         "noindex": false,
@@ -297,11 +298,11 @@
         "tags": [],
         "type": "published",
         "date": "2025-10-11 11:11:05",
-        "dateModified": "2026-01-23 10:28:08",
+        "dateModified": "2026-02-06 16:12:20",
         "position": 2,
         "coverImage": "",
         "category": "",
-        "md5file": "e55ed24aa91e7577ad4ac500f21fc4fe",
+        "md5file": "1e2a66b2ccb2ad5759ad784717a96e31",
         "uuid": "f8309a8ddb5e1bdb1d62f236feb0603d",
         "allowComments": true,
         "template": "",
@@ -321,8 +322,8 @@
         "tags": [],
         "type": "static",
         "date": "2025-10-11 11:03:03",
-        "dateModified": "2025-11-15 09:54:35",
-        "position": 5,
+        "dateModified": "2026-02-06 16:11:29",
+        "position": 2,
         "coverImage": "",
         "category": "general",
         "md5file": "82d79760761bfcef17a3206137648d45",
@@ -333,7 +334,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
             "subtitle": {
                 "value": ""
             }

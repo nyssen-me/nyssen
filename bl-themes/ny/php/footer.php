@@ -186,7 +186,9 @@
 
 
 <footer class="footer wrapper">
-    <div class="container container-wide padding-bottom-none">
+    <div class="container container-wide">
+
+        <hr>
 
         <div class="row first-row">
             <div class="column">

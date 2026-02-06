@@ -132,11 +132,12 @@ address {
 }
 
 blockquote {
-    border-left: 0.3rem solid var(--font-secondary);
-    margin: 4rem auto 4rem 6rem;
+    border-left: 0.6rem solid var(--secondary-color);
+    margin: 4rem auto 4rem 4rem;
     padding: 0 2rem;
-    font-size: var(--body-font-size-lg);
-    font-weight: 600;
+    line-height: 1.5;
+    font-size: var(--font-size-ml);
+    font-weight: 400;
     font-style: italic;
     position: relative;
 }
@@ -178,7 +179,7 @@ pre > code {
 
 hr {
     border: 0;
-    border-top: 0.1rem solid #f4f5f6;
+    border-top: 0.1rem solid var(--font-color);
     margin: 3.0rem 0;
 }
 

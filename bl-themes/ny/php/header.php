@@ -15,10 +15,11 @@
             <?php
             // Get current page key
             $currentKey = isset($page) ? $page->key() : '';
+            $excludeFromMenu = ['elements', 'portfolio'];
 
             // Display static pages (pages) that are not children
             foreach ($staticContent as $staticPage):
-                if (empty($staticPage->parentKey())):
+                if (empty($staticPage->parentKey()) && !in_array($staticPage->key(), $excludeFromMenu)):
                     $isActive = ($currentKey == $staticPage->key());
                     $activeClass = $isActive ? 'active' : '';
                     $ariaCurrent = $isActive ? ' aria-current="page"' : '';
