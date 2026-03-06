@@ -61,18 +61,18 @@
 
 /* Font size */
 :root {
-    --body-font-size-md: 2.0rem;
+    --body-font-size-md: 1.9rem;
     --body-font-size-lg: 2.1rem;
-    --body-font-size-xl: 2.9rem;
+    --body-font-size-xl: 2.8rem;
 
     --font-size-xs: 1.2rem;
     --font-size-sm: 1.4rem;
     --font-size-base: 1.6rem;
     --font-size-md: 1.8rem;
     --font-size-ml: 2.3rem;
-    --font-size-lg: 3.2rem;
+    --font-size-lg: 3.1rem;
     --font-size-xl: 4.2rem;
-    --font-size-xxl: 5.6rem;
+    --font-size-xxl: 5.8rem;
     --font-size-xxxl: 8.6rem;
 }
 
@@ -89,7 +89,7 @@
         --font-size-ml: 2.2rem;
         --font-size-lg: 2.9rem;
         --font-size-xl: 3.7rem;
-        --font-size-xxl: 4.6rem;
+        --font-size-xxl: 4.9rem;
         --font-size-xxxl: 6.6rem;
     }
 }
@@ -106,7 +106,7 @@
         --font-size-ml: 2.1rem;
         --font-size-lg: 2.6rem;
         --font-size-xl: 3.2rem;
-        --font-size-xxl: 3.6rem;
+        --font-size-xxl: 3.9rem;
         --font-size-xxxl: 5.0rem;
     }
 }

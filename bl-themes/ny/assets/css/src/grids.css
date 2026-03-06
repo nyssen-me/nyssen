@@ -7,11 +7,11 @@
 
 /* Container widths & paddings */
 :root {
-    --container-x-narrow-width: 728px;
-    --container-narrow-width: 976px;
-    --container-width: 1224px;
-    --container-wide-width: 1440px;
-    --container-x-wide-width: 1720px;
+    --container-x-narrow-width: 871px; /* 8 columns */
+    --container-narrow-width: 1095px; /* 10 columns */
+    --container-width: 1320px; /* 12 columns (rounded from 1319px) */
+    --container-wide-width: 1543px; /* 14 columns */
+    --container-x-wide-width: 1767px; /* 16 columns */
     
     --container-padding-x-short: 2rem;
     --container-padding-short: 4rem;

@@ -1,0 +1,1 @@
+<p class="MsoNormal">Hands-on testing using a combination of automated tools, manual checks, and assistive technology such as screen readers. Once issues are identified, I work alongside your development team (or directly in the code) to implement the necessary fixes and make sure everything meets the required standards.</p>

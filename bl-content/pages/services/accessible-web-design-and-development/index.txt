@@ -1,0 +1,1 @@
+<p class="MsoNormal">Custom websites built to be fully accessible from the ground up. From semantic HTML and keyboard navigation to colour contrast and responsive design, every decision is made with usability and performance in mind.</p>

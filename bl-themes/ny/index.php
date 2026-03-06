@@ -57,14 +57,13 @@
 
 <body id="top">
 
-	<!-- Load Bludit Plugins: Site Body Begin -->
-	<?php Theme::plugins('siteBodyBegin'); ?>
+	<?php // Load Bludit Plugins: Site Body Begin
+    Theme::plugins('siteBodyBegin'); ?>
 
-	<!-- Header -->
-	<?php include(THEME_DIR_PHP.'header.php'); ?>
+	<?php // Header
+    include(THEME_DIR_PHP.'header.php'); ?>
 
-	<!-- Content -->
-	<?php
+	<?php // Content
     if ($WHERE_AM_I == 'page') {
         // Check if page has a custom template
         $template = $page->template();
@@ -82,8 +81,11 @@
     ?>
 
 
-	<!-- Footer -->
-	<?php include(THEME_DIR_PHP.'footer.php'); ?>
+	<?php // Accessibility Panel
+    include(THEME_DIR_PHP.'partials/accessibility-panel.php'); ?>
+
+	<?php // Footer
+    include(THEME_DIR_PHP.'footer.php'); ?>
 
 
 	<script>
@@ -711,9 +713,8 @@
     </script>
     <!-- <script src="assets/js/lazysizes.min.js"></script> -->
 
-
-	<!-- Load Bludit Plugins: Site Body End -->
-	<?php Theme::plugins('siteBodyEnd'); ?>
+	<?php // Load Bludit Plugins: Site Body End
+    Theme::plugins('siteBodyEnd'); ?>
 
 </body>
 </html>

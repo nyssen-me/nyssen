@@ -17,6 +17,13 @@
             $currentKey = isset($page) ? $page->key() : '';
             $excludeFromMenu = ['elements', 'portfolio'];
 
+            // Home link (not a static page)
+            $homeActive = ($WHERE_AM_I == 'home');
+            ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $homeActive ? 'active' : ''; ?>"<?php echo $homeActive ? ' aria-current="page"' : ''; ?> href="<?php echo DOMAIN_BASE; ?>">Home</a>
+                    </li>
+            <?php
             // Display static pages (pages) that are not children
             foreach ($staticContent as $staticPage):
                 if (empty($staticPage->parentKey()) && !in_array($staticPage->key(), $excludeFromMenu)):
@@ -42,13 +49,9 @@
             aria-label="Accessibility options" 
             aria-expanded="false"
             aria-controls="accessibility-panel">
-            <span>Accessibility Tools</span>
-            <svg class="svg-icon svg-open" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                <path d="M12 6q-.825 0-1.412-.587T10 4t.588-1.412T12 2t1.413.588T14 4t-.587 1.413T12 6M9 22V9H3V7h18v2h-6v13h-2v-6h-2v6z"/>
-            </svg>
-            <svg class="svg-icon svg-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                <path d="m8.382 17.025-1.407-1.4L10.593 12 6.975 8.4 8.382 7 12 10.615 15.593 7 17 8.4 13.382 12 17 15.625l-1.407 1.4L12 13.41z"/>
-            </svg>
+            <span>Accessibility</span>
+            <svg class="svg-icon svg-open" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M13.878 8.75H4a.75.75 0 0 1 0-1.5h9.878a2.251 2.251 0 0 1 4.244 0H20a.75.75 0 0 1 0 1.5h-1.878a2.251 2.251 0 0 1-4.244 0m6.122 8a.75.75 0 0 0 0-1.5h-9.878a2.251 2.251 0 0 0-4.244 0H4a.75.75 0 0 0 0 1.5h1.878a2.25 2.25 0 0 0 4.244 0z"/></svg>
+            <svg class="svg-icon svg-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="m8.382 17.025-1.407-1.4L10.593 12 6.975 8.4 8.382 7 12 10.615 15.593 7 17 8.4 13.382 12 17 15.625l-1.407 1.4L12 13.41z"/></svg>
         </button>
     </div>
 
