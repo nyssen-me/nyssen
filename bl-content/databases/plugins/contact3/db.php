@@ -1,0 +1,28 @@
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "email": "",
+    "name": "",
+    "page": "",
+    "type": "text",
+    "subject": "",
+    "user-cc": false,
+    "user-cc-subject": "",
+    "smtphost": "",
+    "smtpport": "",
+    "smtpencryption": "",
+    "username": "",
+    "password": "",
+    "sendEmailFrom": "fromUser",
+    "domainAddress": "",
+    "gdpr-checkbox": false,
+    "gdpr-checkbox-text": "",
+    "gdpr-text-in-email": false,
+    "spam-protection": "",
+    "recaptcha-site-key": "",
+    "recaptcha-secret-key": "",
+    "hcaptcha-site-key": "",
+    "hcaptcha-secret-key": "",
+    "logical-question-0": "",
+    "logical-answer-0": "",
+    "position": 1
+}

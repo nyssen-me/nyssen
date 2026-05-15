@@ -1,0 +1,1 @@
+<p class="MsoNormal">Accessibility isn't a one-off task. This service provides regular checks and support to make sure your digital products stay compliant as content changes and updates are made. Includes periodic reviews, regression testing, and a point of contact for any accessibility questions that come up along the way.</p>

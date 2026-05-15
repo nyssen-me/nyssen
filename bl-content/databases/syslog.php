@@ -1,6 +1,54 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 [
     {
+        "date": "2026-05-15 10:28:14",
+        "dictionaryKey": "content-edited",
+        "notes": "Home[Autosave]",
+        "idExecution": "6a06e72e36f0a",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-05-15 10:01:37",
+        "dictionaryKey": "new-content-created",
+        "notes": "Contact",
+        "idExecution": "6a06e0f1490bd",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-05-15 09:53:06",
+        "dictionaryKey": "plugin-activated",
+        "notes": "Contact3",
+        "idExecution": "6a06def20db75",
+        "method": "GET",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-05-15 09:39:08",
+        "dictionaryKey": "new-content-created",
+        "notes": "Ongoing Monitoring and Support[Autosave]",
+        "idExecution": "6a06dbac3f3c6",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-05-15 09:37:01",
+        "dictionaryKey": "content-edited",
+        "notes": "Ongoing Monitoring and Support",
+        "idExecution": "6a06db2d84895",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
+        "date": "2026-05-15 09:35:06",
+        "dictionaryKey": "content-edited",
+        "notes": "Ongoing Monitoring and Support",
+        "idExecution": "6a06daba71704",
+        "method": "POST",
+        "username": "nyadmin"
+    },
+    {
         "date": "2026-03-06 19:08:12",
         "dictionaryKey": "new-content-created",
         "notes": "Accessible Web Design and Development[Autosave]",
@@ -29,54 +77,6 @@
         "dictionaryKey": "content-edited",
         "notes": "Accessibility Training and Support",
         "idExecution": "69ab2588e75ef",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 19:05:24",
-        "dictionaryKey": "content-edited",
-        "notes": "Accessible Document Creation and Remediation",
-        "idExecution": "69ab2574ea550",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 19:05:09",
-        "dictionaryKey": "content-edited",
-        "notes": "Accessibility Testing and implementation",
-        "idExecution": "69ab256594975",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 19:04:40",
-        "dictionaryKey": "content-edited",
-        "notes": "Accessibility Auditing",
-        "idExecution": "69ab2548ab056",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 18:46:39",
-        "dictionaryKey": "new-content-created",
-        "notes": "About[Autosave]",
-        "idExecution": "69ab210fd9d3a",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 18:44:38",
-        "dictionaryKey": "content-edited",
-        "notes": "About",
-        "idExecution": "69ab2096830a3",
-        "method": "POST",
-        "username": "nyadmin"
-    },
-    {
-        "date": "2026-03-06 18:44:38",
-        "dictionaryKey": "content-deleted",
-        "notes": "autosave-9bc396099430221fa81a562a0a9bcb7d",
-        "idExecution": "69ab2096830a3",
         "method": "POST",
         "username": "nyadmin"
     }
