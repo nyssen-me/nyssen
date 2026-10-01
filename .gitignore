@@ -1,10 +1,14 @@
-# Ignore WordPress core files (if managed externally)
-wp-admin/
-wp-includes/
+# Bludit: sensitive databases (password hashes, tokens, logs)
+bl-content/databases/users.php
+bl-content/databases/security.php
+bl-content/databases/syslog.php
 
-# Ignore environment-specific configuration
-wp-config.php
-wp-config-*.php  # If you have multiple config files
+# Bludit: plugin config that can hold credentials (SMTP, captcha keys)
+bl-content/databases/plugins/contact3/db.php
+
+# Bludit: runtime data (visit stats, contact messages, temp files)
+bl-content/workspaces/
+bl-content/tmp/
 
 # Ignore sensitive files
 *.log
@@ -12,10 +16,6 @@ wp-config-*.php  # If you have multiple config files
 *.sqlite
 *.db
 .env
-.htaccess
-
-# Ignore uploaded media files (optional)
-wp-content/uploads/
 
 # Ignore dependency directories
 node_modules/
@@ -31,10 +31,11 @@ vendor/
 *.tmp
 *.lock
 
+# Windows
+desktop.ini
+Thumbs.db
+
 # Ignore IDE/editor files
 .vscode/
 .idea/
 *.sublime-workspace
-
-# Ignore composer dependencies (if using Composer)
-composer.lock
