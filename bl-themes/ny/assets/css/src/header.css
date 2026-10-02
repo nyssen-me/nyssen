@@ -135,7 +135,7 @@
 .theme-toggle svg {
     width: 2.4rem;
     height: 2.4rem;
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 
 .theme-toggle .icon-moon,
@@ -153,6 +153,10 @@
     border-color: var(--accent-color);
 }
 
+.theme-toggle:hover svg {
+    fill: var(--bg-color);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .theme-toggle {
         transition: none;
@@ -162,6 +166,43 @@
 @media print {
     .theme-toggle {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .main-header {
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+
+    .logo {
+        width: 15rem;
+        height: 7.5rem;
+    }
+
+    .nyssen {
+        font-size: 5.5rem;
+        line-height: 2.5rem;
+    }
+
+    .line:after,
+    .line:before {
+        max-width: 2.5rem;
+    }
+
+    .main-nav ul {
+        gap: 1rem 1.5rem;
+    }
+
+    .theme-toggle {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .theme-toggle svg {
+        width: 1.6rem;
+        height: 1.6rem;
     }
 }
 
