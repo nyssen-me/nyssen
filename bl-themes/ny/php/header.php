@@ -41,19 +41,12 @@
     </nav>
 
 
-    <div class="accessibility-widget-trigger">
-        <button 
-            class="accessibility-toggle-btn" 
-            type="button" 
-            aria-haspopup="dialog" 
-            aria-label="Accessibility options" 
-            aria-expanded="false"
-            aria-controls="accessibility-panel">
-            <span>Accessibility</span>
-            <svg class="svg-icon svg-open" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M13.878 8.75H4a.75.75 0 0 1 0-1.5h9.878a2.251 2.251 0 0 1 4.244 0H20a.75.75 0 0 1 0 1.5h-1.878a2.251 2.251 0 0 1-4.244 0m6.122 8a.75.75 0 0 0 0-1.5h-9.878a2.251 2.251 0 0 0-4.244 0H4a.75.75 0 0 0 0 1.5h1.878a2.25 2.25 0 0 0 4.244 0z"/></svg>
-            <svg class="svg-icon svg-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="m8.382 17.025-1.407-1.4L10.593 12 6.975 8.4 8.382 7 12 10.615 15.593 7 17 8.4 13.382 12 17 15.625l-1.407 1.4L12 13.41z"/></svg>
-        </button>
-    </div>
+    <!-- Theme switcher (shown by JS; light/dark, defaults to the system theme) -->
+    <button class="theme-toggle" id="js-theme-toggle" type="button" aria-pressed="false" hidden>
+        <svg class="icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 4V1h2v3zm0 19v-3h2v3zm9-10v-2h3v2zM1 13v-2h3v2zm17.7-6.3-1.4-1.4 1.75-1.8 1.45 1.45zM4.95 20.5 3.5 19.05l1.8-1.75 1.4 1.4zm14.1 0-1.75-1.8 1.4-1.4 1.8 1.75zM5.3 6.7 3.5 4.95 4.95 3.5 6.7 5.3zM12 18q-2.5 0-4.25-1.75T6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18"/></svg>
+        <svg class="icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21q-3.75 0-6.375-2.625T3 12t2.625-6.375T12 3q.35 0 .688.025t.662.075q-1.025.725-1.638 1.888T11.1 7.5q0 2.25 1.575 3.825T16.5 12.9q1.375 0 2.525-.613T20.9 10.65q.05.325.075.662T21 12q0 3.75-2.625 6.375T12 21"/></svg>
+        <span class="visually-hidden">Dark theme</span>
+    </button>
 
 </header>
 

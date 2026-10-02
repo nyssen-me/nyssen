@@ -28,7 +28,7 @@
 .logo:hover,
 .logo:focus {
     text-decoration: none;
-    color: var(--absolute-color);
+    color: var(--font-color);
 }
 
 .nyssen {
@@ -51,20 +51,20 @@
 .line svg {
     width: 4rem;
     height: 4rem;
-    fill: var(--primary-color);
+    fill: var(--accent-color);
     transition: fill 0.3s ease-in-out;
 }
 
 .logo:hover .line svg,
 .logo:focus .line svg {
-    fill: var(--absolute-color);
+    fill: var(--font-color);
 }
 
 .line:after,
 .line:before {
     position: absolute;
     content: '';
-    background: var(--primary-color);
+    background: var(--accent-color);
     height: 0.15rem;
     max-width: 3rem;
     width: 100%;
@@ -87,7 +87,7 @@
 .logo:hover .line:before,
 .logo:focus .line:after,
 .logo:focus .line:before {
-    background: var(--absolute-color);
+    background: var(--font-color);
     width: 50%;
 }
 
@@ -95,10 +95,11 @@
 .main-nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1rem 2.5rem;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0.25rem 0 0 0;
     align-items: center;
 }
 
@@ -108,5 +109,59 @@
     text-underline-offset: .3rem;
     letter-spacing: 0.05em;
     transition: 0.3s all;
+}
+
+/* Theme switcher: sun = light theme on, moon = dark theme on */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+    background: transparent;
+    border: 0.15rem solid var(--font-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle[hidden] {
+    display: none;
+}
+
+.theme-toggle svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+}
+
+.theme-toggle .icon-moon,
+.theme-toggle[aria-pressed="true"] .icon-sun {
+    display: none;
+}
+
+.theme-toggle[aria-pressed="true"] .icon-moon {
+    display: block;
+}
+
+.theme-toggle:hover {
+    color: var(--bg-color);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle {
+        transition: none;
+    }
+}
+
+@media print {
+    .theme-toggle {
+        display: none;
+    }
 }
 

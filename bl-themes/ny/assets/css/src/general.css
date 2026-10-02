@@ -16,7 +16,7 @@ html {
 
 body {
 	font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif, sans-serif;
-	color: var(--absolute-color);
+	color: var(--font-color);
     background-color: var(--bg-color);
 	font-size: 1.8rem;
     font-weight: 400;
@@ -49,15 +49,15 @@ h3 a, h4 a, h5 a, h6 a {
 
 a:hover,
 a:focus {
-    color: var(--absolute-color);
+    color: var(--font-color);
     text-decoration-color: transparent;
     cursor: pointer;
 }
 
 *:focus-visible {
 	color: var(--font-color);
-	background-color: var(--absolute-color-alt);
-	outline: 0.3rem solid var(--primary-color);
+	background-color: var(--bg-color);
+	outline: 0.3rem solid var(--accent-color);
     outline-offset: 0.2rem;
 	border-radius: 0.2rem;
 	/* When link is focussed, hide the default underline since the
@@ -141,7 +141,7 @@ address {
 }
 
 blockquote {
-    border-left: 0.6rem solid var(--secondary-color);
+    border-left: 0.6rem solid var(--accent-color);
     margin: 4rem auto 4rem 4rem;
     padding: 0 2rem;
     line-height: 1.5;
@@ -165,7 +165,7 @@ blockquote cite {
 }
 
 code {
-    background: #f4f5f6;
+    background: transparent;
     border-radius: .4rem;
     font-size: 86%;
     margin: 0 .2rem;
@@ -174,8 +174,8 @@ code {
 }
 
 pre {
-    background: #f4f5f6;
-    border-left: 0.3rem solid #9b4dca;
+    background: transparent;
+    border-left: 0.3rem solid var(--accent-color);
     overflow-y: hidden;
 }
 
@@ -256,7 +256,7 @@ table {
 
 td,
 th {
-    border-bottom: 0.1rem solid #e1e1e1;
+    border-bottom: 0.1rem solid var(--font-color);
     padding: 1.2rem 1.5rem;
 }
 

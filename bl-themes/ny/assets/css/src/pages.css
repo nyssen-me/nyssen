@@ -43,7 +43,7 @@
     left: -0.5rem;
     border-radius: 0;
     transition: 0.5s;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     opacity: 0.8;
 }
 
@@ -123,7 +123,7 @@
 
 .service-nav__link:hover,
 .service-nav__link:focus {
-    color: var(--absolute-color);
+    color: var(--font-color);
 }
 
 .service-nav__link span:hover,

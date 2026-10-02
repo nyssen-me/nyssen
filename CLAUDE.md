@@ -54,23 +54,23 @@ c:\wamp64\www\skv\nyssen\
 **Location:** `bl-themes/ny/`
 
 **PHP Templates:**
-- [header.php](bl-themes/ny/php/header.php) - Site header, navigation
+- [header.php](bl-themes/ny/php/header.php) - Site header, navigation, theme switcher
 - [footer.php](bl-themes/ny/php/footer.php) - Site footer
 - [home.php](bl-themes/ny/php/home.php) - Homepage layout
 - [page.php](bl-themes/ny/php/page.php) - Page template
 - [portfolio.php](bl-themes/ny/php/portfolio.php) - Portfolio template
 - [services.php](bl-themes/ny/php/services.php) - Services listing template
 - [single-service.php](bl-themes/ny/php/single-service.php) - Single service template
-- [partials/](bl-themes/ny/php/partials/) - Reusable components (e.g. `accessibility-panel.php`)
+- [partials/](bl-themes/ny/php/partials/) - Reusable components (currently empty)
 - `header-old.php`, `home-old.php`, `home-old2.php` - Earlier versions, kept for reference. Do not delete or edit.
 
 **CSS Architecture** (imported in order by [style.css](bl-themes/ny/assets/css/style.css)):
 - [src/variables.css](bl-themes/ny/assets/css/src/variables.css) - Design tokens
 - Global files: `reset.css`, `general.css`
 - Layout files: `helpers.css`, `grids.css`
-- Component files: `buttons.css`, `header.css`, `footer.css`
+- Component files: `buttons.css`, `header.css` (includes the theme switcher), `footer.css`
 - Content files: `pages.css`
-- [src/plugins/accessibility-tools.css](bl-themes/ny/assets/css/src/plugins/accessibility-tools.css) - Accessibility tools panel
+- `src/plugins/` - Styles for JS plugins (currently empty)
 
 New CSS files must be added as an `@import` in `style.css`.
 
@@ -98,16 +98,26 @@ All JavaScript is inline in [bl-themes/ny/index.php](bl-themes/ny/index.php) as 
 
 ### Color Scheme
 
-Defined as CSS custom properties in [variables.css](bl-themes/ny/assets/css/src/variables.css): `--bg-color`, `--font-color`, `--primary-color`, `--secondary-color`, `--absolute-color`, `--absolute-color-alt`, `--transparent-color`.
+The site uses only four colours, defined as CSS custom properties in [variables.css](bl-themes/ny/assets/css/src/variables.css):
 
-| Mode (class) | Background | Text | Primary | Secondary |
-|---|---|---|---|---|
-| Default (`:root`) | `#F5F5F5` | `#1F1F1F` | `#FFC547` | `#786877` |
-| `.dark-theme` | `#1F1F1F` | `#F5F5F5` | `#D59200` | `#958594` |
-| `.high-contrast` | `#FFFFFF` | `#000000` | `#FFB006` | `#4A3D49` |
-| `.greyscale` | `#F5F5F5` | `#1F1F1F` | `#BFBFBF` | `#6E6E6E` |
+| Palette variable | Value | Use |
+|---|---|---|
+| `--light-color` | `#FBFBFB` | Light theme background / dark theme text |
+| `--dark-color` | `#010101` | Light theme text / dark theme background |
+| `--primary-color` | `#9C0D38` | Accent in the light theme |
+| `--secondary-color` | `#FFB006` | Accent in the dark theme |
 
-Always use the variables rather than hardcoded colors, so that all modes keep working. Any new color combination must meet WCAG AA contrast in every mode.
+Components must use the theme variables, never the palette variables or hardcoded colours:
+
+| Theme variable | Light theme | Dark theme |
+|---|---|---|
+| `--bg-color` | `#FBFBFB` | `#010101` |
+| `--font-color` | `#010101` | `#FBFBFB` |
+| `--accent-color` | `#9C0D38` | `#FFB006` |
+
+**Themes:** only light and dark (no high contrast or greyscale modes). The default follows the system setting (`prefers-color-scheme`). The theme switcher in the header (an icon-only toggle button with `aria-pressed`) sets `data-theme="light"` or `data-theme="dark"` on `<html>` and saves the choice in `localStorage` (`theme` key). A small inline script in the `<head>` of [index.php](bl-themes/ny/index.php) applies the saved theme before render.
+
+**Contrast rules:** the accent only has enough contrast against `--bg-color` in its own theme, so never put `--primary-color` on a dark background or `--secondary-color` on a light one. Text placed on an `--accent-color` background must use `--bg-color`. Any new colour combination must meet WCAG AA contrast in both themes.
 
 ### Accessibility Requirements (Critical for this project)
 
@@ -118,11 +128,7 @@ This project **prioritizes accessibility**. Maintain these standards:
 - Keyboard navigation support
 - Screen reader compatibility (test with NVDA, JAWS, VoiceOver)
 - WCAG 2.2 AA color contrast ratios
-- Accessibility tools panel:
-  - Text size adjustment
-  - Contrast modes
-  - Font readability options
-  - Link highlighting
+- No accessibility tools panel/overlay: the site itself must be accessible. The only user setting is the light/dark theme switcher.
 
 ### Typography
 
@@ -157,7 +163,7 @@ This project uses modern system font stacks (system-ui) for the best possible pe
 - [ ] Responsive design (mobile, tablet, desktop)
 - [ ] No hardcoded URLs (uses `DOMAIN_BASE`)
 - [ ] CSS compiled and minified
-- [ ] Works in all color modes and with the accessibility tools panel
+- [ ] Works in both light and dark themes (system default and switcher)
 - [ ] Keyboard and screen reader tested
 
 ## File Organization Rules

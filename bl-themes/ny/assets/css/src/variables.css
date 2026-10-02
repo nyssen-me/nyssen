@@ -4,60 +4,36 @@
 /* Colors
   ============ */
 :root {
-    --bg-color: #F5F5F5;
-    --font-color: #1F1F1F;
-    --primary-color: #FFC547;
-    --secondary-color: #786877;
-    --absolute-color: #000000;
-    --absolute-color-alt: #FFFFFF;
-    --transparent-color: rgba(224, 224, 224, 0.95);
+    /* Palette */
+    --light-color: #FBFBFB;
+    --dark-color: #010101;
+    --primary-color: #9C0D38;
+    --secondary-color: #FFB006;
+
+    /* Light theme (default) */
+    --bg-color: var(--light-color);
+    --font-color: var(--dark-color);
+    --accent-color: var(--primary-color);
+    color-scheme: light;
 }
 
-.dark-theme {
-    --bg-color: #1F1F1F;
-    --font-color: #F5F5F5;
-    --primary-color: #D59200;
-    --secondary-color: #958594;
-    --absolute-color: #FFFFFF;
-    --absolute-color-alt: #000000;
-    --transparent-color: rgba(31, 31, 31, 0.95);
+/* Dark theme: follows the system unless light is chosen */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-color: var(--dark-color);
+        --font-color: var(--light-color);
+        --accent-color: var(--secondary-color);
+        color-scheme: dark;
+    }
 }
 
-.high-contrast {
-    --bg-color: #FFFFFF;
-    --font-color: #000000;
-    --primary-color: #FFB006;
-    --secondary-color: #4A3D49;
-    --absolute-color: #000000;
-    --absolute-color-alt: #FFFFFF;
-    --transparent-color: rgba(255, 255, 255, 0.95);
+/* Dark theme: chosen with the theme switcher */
+:root[data-theme="dark"] {
+    --bg-color: var(--dark-color);
+    --font-color: var(--light-color);
+    --accent-color: var(--secondary-color);
+    color-scheme: dark;
 }
-
-.high-contrast img {
-    -webkit-filter: contrast(1.5);
-    filter: contrast(1.5)
-}
-
-.greyscale {
-    --bg-color: #F5F5F5;
-    --font-color: #1F1F1F;
-    --primary-color: #BFBFBF;
-    --secondary-color: #6E6E6E;
-    --absolute-color: #000000;
-    --absolute-color-alt: #FFFFFF;
-    --transparent-color: rgba(224, 224, 224, 0.95);
-}
-
-.greyscale img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1)
-}
-
-/* 29/08/2019 */
-/* Nova proposta trobada a https://www.colorinspire.io/ (pendent d'aplicar) */
-/* // @yellow: #FFBD2A;
-// @white: #FFFFFF;
-// @blue: #1A4B76; */
 
 /* Font size */
 :root {

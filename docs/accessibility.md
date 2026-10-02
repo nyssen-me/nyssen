@@ -9,14 +9,14 @@ This project **prioritizes accessibility**. All code must maintain these standar
 - Keyboard navigation support (all interactive elements must be reachable and operable via keyboard)
 - Screen reader compatibility (meaningful alt text, logical heading hierarchy, visible focus indicators)
 
-## Accessibility Tools Panel
+## Theme Switcher
 
-The theme includes an accessibility tools panel with:
+The site has no accessibility tools panel or overlay: it must be accessible as it is. The only user setting is a light/dark theme switcher in the header:
 
-- Text size adjustment
-- Contrast modes
-- Font readability options
-- Link highlighting
+- Defaults to the system setting (`prefers-color-scheme`)
+- Icon-only native `<button>` with `aria-pressed`; its accessible name "Dark theme" is in a visually hidden span
+- Hidden until JavaScript runs, so it never appears as a broken control
+- Every colour combination must meet WCAG 2.2 AA contrast in both themes
 
 ## Code Guidelines
 
