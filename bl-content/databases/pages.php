@@ -1,5 +1,121 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-479f236b3a4167412cc78814b16f6be8": {
+        "title": "Resources[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-05 17:51:47",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "04af38c48b6af57fdebf083f687e75c4",
+        "uuid": "autosave-479f236b3a4167412cc78814b16f6be8",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
+    "resources\/colour-palette-contrast-checker": {
+        "title": "Colour Palette Contrast Checker",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-05 17:44:34",
+        "dateModified": "2026-10-05 17:49:26",
+        "position": 21,
+        "coverImage": "",
+        "category": "",
+        "md5file": "4e51d74c1b9db45d94cd1dee6d713f14",
+        "uuid": "73d4e715aa547ce81e5e3f5edae7995f",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
+    "resources": {
+        "title": "Resources",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-05 17:41:13",
+        "dateModified": "2026-10-05 17:49:46",
+        "position": 20,
+        "coverImage": "",
+        "category": "",
+        "md5file": "04af38c48b6af57fdebf083f687e75c4",
+        "uuid": "479f236b3a4167412cc78814b16f6be8",
+        "allowComments": true,
+        "template": "resources",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
+    "autosave-19518a710fd40a7fc5a8135c83c49f2e": {
+        "title": "Accessibility statement[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-02 12:55:09",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "4570d8684e7c8e772c9aba4bf0cd0ecf",
+        "uuid": "autosave-19518a710fd40a7fc5a8135c83c49f2e",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
+    "accessibility-statement": {
+        "title": "Accessibility statement",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-02 11:47:08",
+        "dateModified": "2026-10-02 12:53:08",
+        "position": 98,
+        "coverImage": "",
+        "category": "",
+        "md5file": "00979e6d0e71b44d24be38ea458f7b65",
+        "uuid": "19518a710fd40a7fc5a8135c83c49f2e",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
     "contact": {
         "title": "Contact",
         "description": "",

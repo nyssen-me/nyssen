@@ -1,0 +1,4 @@
+<p>I am committed to ensuring that this website is accessible to everyone, regardless of technology, ability, physical condition, or environment.</p>
+<p>I aim to meet <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) 2.2</a>, Level AA, published by the World Wide Web Consortium (W3C).</p>
+<p>The website is built using code that complies with W3C standards for HTML and CSS, and has been tested across modern web browsers and devices, as well as selected assistive technology, including NVDA for Windows.</p>
+<p>If you experience any difficulty using this website, please get in touch by email at <a href="mailto:sergiduran@nyssen.me">sergiduran@nyssen.me</a>. I take accessibility seriously and aim to respond within five working days.</p>
