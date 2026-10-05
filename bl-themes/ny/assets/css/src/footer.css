@@ -1,30 +1,65 @@
 /*! Footer */
 /* ==========================================================================*/
 
-.subfooter {
+/* Keep the last line clear of the fixed back to top link */
+.footer.wrapper .container {
+    padding-bottom: 8rem;
+}
+
+.footer hr {
+    margin: 0 0 6rem;
+    border-top: 0.15rem solid var(--font-color);
+}
+
+.footer-title {
+    font-size: var(--body-font-size-lg);
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.footer p,
+.footer address {
+    margin-bottom: 1rem;
+}
+
+/* Lists displayed in a row */
+.footer-list {
     display: flex;
-    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 0.5rem 2.5rem;
+    list-style: none;
     padding: 0;
-    margin: 6em 0 0;
-    font-size: 0.75em;
-    justify-content: left;
-    font-family: 'Fjalla One', sans-serif;
-    letter-spacing: 0.05em;
+    margin: 0;
 }
 
-.subfooter li {
-    margin: 0 0.5em;
+.footer-list li {
+    margin: 0;
 }
 
-.subfooter a {
-    color: var(--font-color);
-    border-bottom: 1px dotted var(--font-color);
-    text-decoration: none;
-    margin: 0 0.5em;
-    padding: 0.25em 0;
+/* First row: copyright, contact and social media */
+.footer-main .column {
+    margin-bottom: 3rem;
 }
 
-.subfooter a:hover,
-.subfooter a:focus {
-    border-bottom-color: transparent;
+/* Second row: a11y webring */
+.a11y-webring-club {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem 4rem;
+    font-size: var(--font-size-base);
+    padding-top: 4rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 769px) {
+
+    .footer-main .column {
+        margin-bottom: 4rem;
+    }
+
+    .a11y-webring-club {
+        flex-direction: row;
+    }
 }

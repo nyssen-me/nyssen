@@ -111,6 +111,12 @@
     transition: 0.3s all;
 }
 
+/* Current page: thicker accent underline (aria-current="page" for screen readers) */
+.main-nav ul li a.active {
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: max(3px, .3rem);
+}
+
 /* Theme switcher: sun = light theme on, moon = dark theme on */
 .theme-toggle {
     display: flex;

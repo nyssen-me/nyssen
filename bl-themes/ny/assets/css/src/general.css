@@ -40,11 +40,13 @@ a {
 h1 a, h2 a {
     text-decoration-thickness: 0.3rem;
     text-underline-offset: 0.3rem;
+    font-weight: 500;
 }
 
 h3 a, h4 a, h5 a, h6 a {
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 0.3rem;
+    font-weight: 500;
 }
 
 a:hover,
@@ -80,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 2rem;
     margin-top: 0;
 }
