@@ -1,1 +1,3 @@
-<p>Free tools and resources to help you design and build more accessible websites. Each one comes from a real need in my own work, and I'll keep adding more as I go.</p>
+<div class="page-intro">
+<p class="text-large">Free tools and resources to help you design and build more accessible websites. Each one comes from a real need in my own work, and I'll keep adding more as I go.</p>
+</div>

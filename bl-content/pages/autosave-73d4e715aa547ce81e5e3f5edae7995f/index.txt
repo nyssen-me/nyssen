@@ -1,8 +1,10 @@
+<div class="page-intro">
 <p>A good colour palette brings a website to life. To make it work for everyone, though, the colours also need enough contrast with each other, so that text, buttons and icons are easy to see and read.</p>
 <p>Most contrast checkers test one colour against another, which is fine until you have eight brand colours, 56 possible combinations and the patience for roughly none of them.</p>
 <p>So I built a tool that checks the lot.</p>
+</div>
 <h2>What it does</h2>
-<ul>
+<ul class="two-columns">
 <li><strong>Checks every pair at once.</strong> Add as many colours as you like. It starts you off with one random colour, just to break the ice.</li>
 <li><strong>Tests three things for each pair:</strong> normal text, large text, and UI components and graphics, against WCAG 2.2 AA or AAA.</li>
 <li><strong>Shows results your way.</strong> Cards, one per background colour, or a table with every combination laid out like a seating plan.</li>
@@ -16,4 +18,4 @@
 <p>Good contrast won't make a website accessible on its own, but poor contrast will certainly make it harder to use. Think of this as one brushstroke in a much bigger picture.</p>
 <h2>Try it out</h2>
 <p>Bring your palette, see who gets along, and let every colour find its partner.</p>
-<p><a href="https://accessiblepalette.uk/">Open the Accessible Colour Palette Contrast Checker</a></p>
+<p><strong><a href="https://accessiblepalette.uk/">Open the Accessible Colour Palette Contrast Checker</a></strong></p>

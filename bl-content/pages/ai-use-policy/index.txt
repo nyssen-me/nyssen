@@ -1,0 +1,35 @@
+<h2>Why I have this policy</h2>
+<p>I use AI tools to support my work, but every finding, recommendation and deliverable you receive from me is checked and approved by me. This policy explains how I use AI, what I never hand over to it, and how I protect your data.</p>
+<p>It applies to all my services: accessibility audits, testing, document remediation, training, monitoring and accessible web development.</p>
+<h2>How I use AI</h2>
+<p>I use AI as an assistant to save time on routine tasks, so more of your budget goes on expert testing and advice. Typical uses include:</p>
+<ul>
+<li>drafting and structuring reports, emails and training materials, which I then edit and verify</li>
+<li>suggesting code approaches for fixing accessibility issues, which I review and test before recommending</li>
+<li>checking spelling, grammar and readability in my own writing</li>
+<li>researching standards, guidance and techniques, which I confirm against original sources such as the <abbr title="World Wide Web Consortium">W3C</abbr></li>
+</ul>
+<p>I do not use AI to make decisions about your project on my behalf.</p>
+<h2>What AI never replaces</h2>
+<p>Accessibility is about real people using real assistive technology, so the core of my work is always done by me. This includes:</p>
+<ul>
+<li>manual testing against <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 success criteria</li>
+<li>testing with keyboards, screen readers, magnification and other assistive technology</li>
+<li>judging whether an issue passes or fails, and how severe it is</li>
+<li>the final wording of every finding and recommendation in an audit report</li>
+</ul>
+<p>Automated tools, including AI-powered ones, can only detect a minority of accessibility issues. I use them as a starting point, never as the result.</p>
+<h2>AI-generated alt text, captions and summaries</h2>
+<p>AI can produce a useful first draft of alt text, captions, transcripts and plain English summaries, but it often gets the details wrong. When I create or remediate content for you, I check every item by hand. In particular:</p>
+<ul>
+<li>alt text describes the purpose of an image in its context, not just what it shows</li>
+<li>captions and transcripts have names, technical terms and speaker changes corrected</li>
+<li>simplified text keeps the original meaning</li>
+</ul>
+<p>If your team uses AI to create content, I can show you how to do this responsibly in my training sessions.</p>
+<h2>Overlays and automatic compliance claims</h2>
+<p>I do not recommend or sell accessibility overlays that claim to make a website compliant automatically. No tool, AI-powered or not, can fix underlying accessibility problems in your code and content.</p>
+<p>My own user preference controls are offered as an optional extra that lets visitors adjust how a site looks. I never present them as a compliance solution, and they are always added on top of an accessible site, not instead of one.</p>
+<h2>Your choice</h2>
+<p>If you would prefer that I do not use AI tools on your project at all, just tell me before we start and I will work without them. This will not affect the quality of my work, although some tasks may take a little longer.</p>
+<p>I review this policy at least once a year, as AI tools and guidance change quickly. If you have any questions, email me at <a href="mailto:hello@nyssen.me">hello@nyssen.me</a>.</p>
