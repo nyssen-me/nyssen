@@ -115,9 +115,15 @@
 .container {
     margin: 0 auto;
     max-width: 112rem;
-    padding: 0 2rem;
+    padding: 0 3rem;
     position: relative;
     width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 2rem;
+    }
 }
 
 .row {
@@ -175,6 +181,7 @@
 .row .column.column-5,
 .row .column.column-7,
 .row .column.column-10,
+.row .column.column-15,
 .row .column.column-20,
 .row .column.column-25,
 .row .column.column-28,
@@ -265,6 +272,11 @@
     .row .column.column-10 {
         flex: 0 0 10%;
         max-width: 10%;
+    }
+
+    .row .column.column-15 {
+        flex: 0 0 15%;
+        max-width: 15%;
     }
 
     .row .column.column-20 {

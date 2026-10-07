@@ -14,7 +14,7 @@
             </div>
 
             <!-- Contact -->
-            <div class="column column-offset-5">
+            <div class="column column-20 column-offset-6">
                 <h2 class="footer-title">Contact</h2>
                 <address>
                     <a href="mailto:sergiduran@nyssen.me">sergiduran<!--antispam code-->@<!--va-bene-->nyssen.me</a>
@@ -22,7 +22,7 @@
             </div>
 
             <!-- Social Networks -->
-            <div class="column column-offset-5 footer-social">
+            <div class="column column-20 column-offset-6 footer-social">
                 <h2 class="footer-title">Social media</h2>
                 <ul class="footer-list">
                     <?php foreach (Theme::socialNetworks() as $key=>$label): ?>
