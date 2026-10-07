@@ -10,6 +10,7 @@
                 <ul class="footer-list">
                     <li>&copy; <?php echo date('Y'); ?> SD Nyssen</li>
                     <li><a href="<?php echo DOMAIN_BASE; ?>accessibility-statement">Accessibility statement</a></li>
+                    <li><a href="<?php echo DOMAIN_BASE; ?>ai-use-policy">AI use policy</a></li>
                 </ul>
             </div>
 

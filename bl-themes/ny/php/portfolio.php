@@ -6,7 +6,7 @@
         <?php Theme::plugins('pageBegin'); ?>
         
         <!-- Page title -->
-        <h1 class="post-title">Portfolio template: <?php echo $page->title(); ?></h1>
+        <h1 class="page-title">Portfolio template: <?php echo $page->title(); ?></h1>
         
         <!-- Page cover image -->
         <?php if ($page->coverImage()): ?>

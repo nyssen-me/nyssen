@@ -20,6 +20,7 @@
                 'contact',
                 'portfolio',
                 'accessibility-statement',
+                'ai-use-policy',
                 'elements'
                 ];
 
