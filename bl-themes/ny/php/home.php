@@ -1,7 +1,7 @@
 <main role="main" id="maincontent" class="wrapper">
 
     <section>
-        <div class="container container-narrow">
+        <div class="container container-narrow padding-bottom-none">
             <div class="row">
                 <div class="column">
 

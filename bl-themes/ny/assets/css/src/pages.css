@@ -4,6 +4,7 @@
 .description {
     font-size: var(--font-size-lg);
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* Services list */
