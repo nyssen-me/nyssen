@@ -27,7 +27,7 @@
 }
 
 .logo:hover,
-.logo:focus {
+.logo:focus-visible {
     text-decoration: none;
     color: var(--font-color);
 }
@@ -57,7 +57,7 @@
 }
 
 .logo:hover .line svg,
-.logo:focus .line svg {
+.logo:focus-visible .line svg {
     fill: var(--font-color);
 }
 
@@ -86,8 +86,8 @@
 
 .logo:hover .line:after,
 .logo:hover .line:before,
-.logo:focus .line:after,
-.logo:focus .line:before {
+.logo:focus-visible .line:after,
+.logo:focus-visible .line:before {
     background: var(--font-color);
     width: 50%;
 }
@@ -165,12 +165,6 @@
 
 .theme-toggle:hover svg {
     fill: var(--bg-color);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .theme-toggle {
-        transition: none;
-    }
 }
 
 @media print {

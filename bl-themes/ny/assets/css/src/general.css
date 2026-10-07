@@ -49,8 +49,12 @@ h3 a, h4 a, h5 a, h6 a {
     font-weight: 500;
 }
 
+strong a {
+    text-decoration-thickness: 0.2rem;
+}
+
 a:hover,
-a:focus {
+a:focus-visible {
     color: var(--font-color);
     text-decoration-color: transparent;
     cursor: pointer;
@@ -65,11 +69,6 @@ a:focus {
 	/* When link is focussed, hide the default underline since the
 	   box shadow adds the "underline" */
 	text-decoration: none;
-}
-
-*:focus:not(:focus-visible) {
-    /* Remove focus indication when a mouse is used */
-    outline: none;
 }
 
 p {
@@ -130,7 +129,8 @@ em {
 }
 
 b,
-strong {
+strong,
+strong a {
     font-weight: 700;
 }
 
@@ -215,18 +215,28 @@ ul ul {
 }
 
 ol {
-    list-style: decimal inside;
+    list-style: decimal outside;
+    padding-left: 1.7rem;
 }
 
 ul {
-    list-style: circle inside;
+    list-style: disc outside;
+    padding-left: 1.7rem;
 }
 
-.button,
-button,
+ul li::marker {
+    color: var(--primary-color);
+}
+
 dd,
 dt,
 li {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.button,
+button {
     margin-bottom: 1.0rem;
 }
 
@@ -276,5 +286,17 @@ th:last-child {
     table {
         display: table;
         overflow-x: initial;
+    }
+}
+
+/* Reduced motion: switch off transitions and animations site-wide */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
     }
 }

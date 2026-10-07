@@ -30,7 +30,7 @@
     transition-timing-function: ease-out;
 }
 
-.button:focus,
+.button:focus-visible,
 .button:hover {
     color: var(--bg-color);
     border-color: var(--accent-color);
@@ -50,7 +50,7 @@
     background-color: transparent;
 }
 
-.button:focus:after,
+.button:focus-visible:after,
 .button:hover:after {
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@
     opacity: .5;
 }
 
-.button[disabled]:focus,
+.button[disabled]:focus-visible,
 .button[disabled]:hover {
     color: var(--cta-primary);
 }
