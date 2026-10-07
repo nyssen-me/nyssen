@@ -1,19 +1,21 @@
 /*! Header */
 /* ==========================================================================*/
 
+/* Logo and nav wrap with flex; the toggle is pinned top-right in the space
+   reserved by padding-right, so the nav drops below the logo when it no longer fits */
 .main-header {
+    position: relative;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 2rem 3rem;
     height: auto;
-    padding: 2.5rem 3rem;
+    padding: 2.5rem calc(3rem + 4.4rem + 3rem) 2.5rem 3rem;
 }
 
 /* Logo */
 .logo {
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +23,6 @@
     width: 20rem;
     height: 10rem;
     text-decoration: none;
-    margin-right: auto;
     transition: color 0.3s ease-in-out;
 }
 
@@ -119,6 +120,9 @@
 
 /* Theme switcher: sun = light theme on, moon = dark theme on */
 .theme-toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +183,7 @@
 @media screen and (max-width: 480px) {
     .main-header {
         gap: 2rem;
-        padding: 2rem 2rem;
+        padding: 2rem calc(2rem + 3.6rem + 2rem) 2rem 2rem;
     }
 
     .logo {
@@ -202,6 +206,8 @@
     }
 
     .theme-toggle {
+        top: 2rem;
+        right: 2rem;
         width: 3.6rem;
         height: 3.6rem;
     }

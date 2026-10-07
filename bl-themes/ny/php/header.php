@@ -15,7 +15,13 @@
             <?php
             // Get current page key
             $currentKey = isset($page) ? $page->key() : '';
-            $excludeFromMenu = ['elements', 'portfolio', 'accessibility-statement'];
+            $excludeFromMenu = [
+                'services',
+                'contact',
+                'portfolio',
+                'accessibility-statement',
+                'elements'
+                ];
 
             // Home link (not a static page)
             $homeActive = ($WHERE_AM_I == 'home');
