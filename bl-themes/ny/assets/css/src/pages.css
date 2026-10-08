@@ -1,10 +1,23 @@
 /*! Pages */
 /* ==========================================================================*/
 
+/* Site slogan: a <p> styled to match its previous <h2> rendering */
 .description {
     font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 1.25;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+/* Section label: a <p> that looks exactly like an h2, used when the
+   items below it need to be the h2s */
+.section-label {
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .page-title {
@@ -27,7 +40,7 @@
 .services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    gap: 5rem;
     list-style: none;
     margin: 4rem 0 0 0;
     padding: 0;
@@ -40,17 +53,18 @@
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
-.services-list li h3 {
+.services-list li h2 {
     font-size: var(--font-size-ml);
+    line-height: 1.5;
 }
 
-.services-list li h3 a::after {
+.services-list li h2 a::after {
     content: '';
     position: absolute;
     inset: 0;
 }
 
-.services-list li h3 a::before {
+.services-list li h2 a::before {
     content: "";
     width: 0.8rem;
     position: absolute;
@@ -65,8 +79,8 @@
     z-index: 1;
 }
 
-.services-list li h3 a:focus-visible::before,
-.services-list li h3 a:hover::before {
+.services-list li h2 a:focus-visible::before,
+.services-list li h2 a:hover::before {
     width: 100%;
     height: 0.5rem;
     bottom: -0.5rem;
@@ -76,7 +90,7 @@
 }
 
 .services-list li p {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2.2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -87,6 +101,61 @@
 
 @media (max-width: 480px) {
     .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Resources list */
+.resources-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    list-style: none;
+    margin: 4rem 0 0 0;
+    padding: 0;
+}
+
+.resources-list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.15rem solid var(--font-color);
+    padding-left: 2rem;
+}
+
+.resources-list li h2 {
+    position: relative;
+    font-size: var(--font-size-ml);
+}
+
+.resources-list li h2::before {
+    content: "";
+    width: 0.8rem;
+    position: absolute;
+    height: 0.8rem;
+    top: 1.25rem;
+    left: -2rem;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.resources-list li a {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    font-size: var(--body-font-size-md);
+    font-weight: 500;
+}
+
+.link-external svg {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.4rem;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .resources-list {
         grid-template-columns: 1fr;
     }
 }

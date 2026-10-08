@@ -6,7 +6,7 @@
                 <div class="column">
 
                     <h1 class="site-title"><?php echo $site->title(); ?></h1>
-                    <h2 class="description"><?php echo $site->slogan(); ?></h2>
+                    <p class="description"><?php echo $site->slogan(); ?></p>
                 
                 </div>
                 <div class="column column-25"></div>
@@ -37,28 +37,31 @@
     </section>
 
 
-    <section>
+    <?php
+    global $pages;
+    $serviceChildren = $pages->getChildren('services');
+    usort($serviceChildren, function($a, $b) {
+        return (new Page($a))->position() - (new Page($b))->position();
+    });
+    ?>
+    <section<?php if (!empty($serviceChildren)) echo ' aria-labelledby="services-label"'; ?>>
         <div class="container container-narrow padding-top-none">
             <div class="row">
                 <div class="column">
 
                     <?php
-                    global $pages;
-                    $serviceChildren = $pages->getChildren('services');
-                    usort($serviceChildren, function($a, $b) {
-                        return (new Page($a))->position() - (new Page($b))->position();
-                    });
                     if (!empty($serviceChildren)):
                         $servicesPage = new Page('services');
                     ?>
-                    <h2><?php echo $servicesPage->title(); ?></h2>
+                    <!-- Not a heading: the service titles below are the h2s -->
+                    <p id="services-label" class="section-label"><?php echo $servicesPage->title(); ?></p>
                     
                     <ul class="services-list">
                         <?php foreach ($serviceChildren as $childKey):
                             $childPage = new Page($childKey);
                         ?>
                         <li>
-                            <h3><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h3>
+                            <h2><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h2>
                             <?php if ($childPage->description()): ?>
                             <p><?php echo $childPage->description(); ?></p>
                             <?php endif; ?>

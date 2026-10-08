@@ -207,10 +207,6 @@
         max-width: 2.5rem;
     }
 
-    .main-nav ul {
-        gap: 1rem 1.5rem;
-    }
-
     .theme-toggle {
         top: 2rem;
         right: 2rem;

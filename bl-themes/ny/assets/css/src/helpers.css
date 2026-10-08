@@ -103,6 +103,12 @@
     margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .page-intro {
+        max-width: 100%;
+    }
+}
+
 /* Images */
 .img-rounded {
     display: block;

@@ -18,7 +18,7 @@
             <div class="column column-20 column-offset-6">
                 <h2 class="footer-title">Contact</h2>
                 <address>
-                    <a href="mailto:sergiduran@nyssen.me">sergiduran<!--antispam code-->@<!--va-bene-->nyssen.me</a>
+                    <a href="mailto:hello@nyssen.me">hello<!--antispam code-->@<!--va-bene-->nyssen.me</a>
                 </address>
             </div>
 
@@ -36,7 +36,6 @@
 
         <!-- a11y webring -->
         <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
-            <h2 id="a11y-webring-club" class="footer-title">a11y-webring.club</h2>
             <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
             <ul class="footer-list">
                 <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/prev">Previous website</a></li>

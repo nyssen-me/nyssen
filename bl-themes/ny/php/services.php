@@ -40,7 +40,7 @@
                             $childPage = new Page($childKey);
                         ?>
                         <li>
-                            <h3><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h3>
+                            <h2><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h2>
                             <?php if ($childPage->description()): ?>
                             <p><?php echo $childPage->description(); ?></p>
                             <?php endif; ?>
