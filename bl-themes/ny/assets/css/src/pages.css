@@ -52,13 +52,15 @@
 
 .services-list li h3 a::before {
     content: "";
-    width: 0.7rem;
+    width: 0.8rem;
     position: absolute;
-    height: 0.7rem;
-    bottom: -1.2rem;
-    left: -0.7rem;
-    border-radius: 0;
-    transition: 0.3s;
+    height: 0.8rem;
+    bottom: -1.4rem;
+    left: -0.6rem;
+    border-radius: 50%;
+    transition: 
+        width 0.3s, height 0.3s, bottom 0.3s, left 0.3s,
+        border-radius 0s 0.3s; /* round again after the bar has shrunk */
     background-color: var(--accent-color);
     z-index: 1;
 }
@@ -69,6 +71,8 @@
     height: 0.5rem;
     bottom: -0.5rem;
     left: 0;
+    border-radius: 0;
+    transition-delay: 0s; /* square straight away on hover */
 }
 
 .services-list li p {
