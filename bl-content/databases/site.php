@@ -2,7 +2,7 @@
 {
     "title": "Digital Accessibility Services",
     "slogan": "Nyssen, Digital Accessibility Specialist and Consultant",
-    "description": "I am a creative freelance web designer &amp; front-end developer specialising in HTML5, CSS3, PWA &amp; WordPress. I design user &amp; SEO friendly websites.",
+    "description": "Digital accessibility specialist with 20+ years in web design and development. WCAG 2.2 AA audits, testing, fixes, accessible documents and team training.",
     "footer": "Copyright \u00a9 2025",
     "itemsPerPage": 6,
     "language": "en",
@@ -45,5 +45,5 @@
     "thumbnailHeight": 400,
     "thumbnailQuality": 100,
     "markdownParser": true,
-    "customFields": "{\r\n    &quot;subtitle&quot;: {\r\n        &quot;type&quot;: &quot;string&quot;,\r\n        &quot;label&quot;: &quot;Subtitle&quot;,\r\n        &quot;placeholder&quot;: &quot;Subtitle for the page&quot;\r\n    }\r\n}"
+    "customFields": "{\r\n    &quot;subtitle&quot;: {\r\n        &quot;type&quot;: &quot;string&quot;,\r\n        &quot;label&quot;: &quot;Subtitle&quot;,\r\n        &quot;placeholder&quot;: &quot;Subtitle for the page&quot;\r\n    },\r\n    &quot;externalUrl&quot;: {\r\n        &quot;type&quot;: &quot;string&quot;,\r\n        &quot;label&quot;: &quot;External URL&quot;,\r\n        &quot;tip&quot;: &quot;Optional. If filled, the resources list links here instead of to the page.&quot;,\r\n        &quot;placeholder&quot;: &quot;https:\\\/\\\/example.com&quot;\r\n    }\r\n}"
 }

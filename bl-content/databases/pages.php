@@ -1,5 +1,89 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-5fcc76747327b57f189bf9277d7aa707": {
+        "title": "Accessibility Audit Tool[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-08 17:30:41",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "ff761158dd176bd6f007f36767990806",
+        "uuid": "autosave-5fcc76747327b57f189bf9277d7aa707",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
+    },
+    "autosave-1b8bd534679878ebee761385c53e989d": {
+        "title": "Accessibility Toolkit",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-08 17:26:02",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "b3d73d0ddc2efb3dcd62fa737ddcd0de",
+        "uuid": "autosave-1b8bd534679878ebee761385c53e989d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
+    },
+    "autosave-73d4e715aa547ce81e5e3f5edae7995f": {
+        "title": "Colour Palette Contrast Checker",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-08 16:25:59",
+        "dateModified": "2026-10-08 17:26:41",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "586cfdb06e3638709ef028c3cd311d42",
+        "uuid": "autosave-73d4e715aa547ce81e5e3f5edae7995f",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
+    },
     "resources\/accessibility-audit-tool": {
         "title": "Accessibility Audit Tool",
         "description": "A self-contained web application for conducting WCAG 2.2 Level AA accessibility audits. Built as a single HTML file with no dependencies.",
@@ -7,11 +91,11 @@
         "tags": [],
         "type": "static",
         "date": "2026-10-08 15:42:32",
-        "dateModified": "",
+        "dateModified": "2026-10-08 17:28:40",
         "position": 24,
         "coverImage": "",
         "category": "",
-        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "md5file": "8ed9ff840ae36815aa7e5acf1be6244b",
         "uuid": "5fcc76747327b57f189bf9277d7aa707",
         "allowComments": true,
         "template": "",
@@ -21,17 +105,20 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": "https:\/\/github.com\/nyssen-me\/Accessibility-audit-tool"
             }
         }
     },
-    "resources\/accessibility-laws-standards": {
+    "accessibility-laws-standards": {
         "title": "Accessibility Laws &amp; Standards",
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2026-10-08 15:39:00",
-        "dateModified": "",
+        "dateModified": "2026-10-08 16:43:14",
         "position": 23,
         "coverImage": "",
         "category": "",
@@ -45,21 +132,24 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
     "resources\/accessibility-toolkit": {
-        "title": "Accessibility toolkit",
-        "description": "",
+        "title": "Accessibility Toolkit",
+        "description": "A lightweight, customizable accessibility toolkit that provides users with visual and reading assistance tools to improve their browsing experience.",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2026-10-08 15:37:36",
-        "dateModified": "",
+        "dateModified": "2026-10-08 17:26:01",
         "position": 22,
         "coverImage": "",
         "category": "",
-        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "md5file": "bb4b21552fc2be6c2307119d3f36a078",
         "uuid": "1b8bd534679878ebee761385c53e989d",
         "allowComments": true,
         "template": "",
@@ -69,6 +159,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": "https:\/\/github.com\/nyssen-me\/Accessibility-Toolkit"
             }
         }
     },
@@ -90,31 +183,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
-    },
-    "autosave-73d4e715aa547ce81e5e3f5edae7995f": {
-        "title": "Colour Palette Contrast Checker[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2026-10-07 16:08:04",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "586cfdb06e3638709ef028c3cd311d42",
-        "uuid": "autosave-73d4e715aa547ce81e5e3f5edae7995f",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-623c52686aacb7b9c1a1169fd6aed0ff": {
         "title": "AI use policy[Autosave]",
@@ -134,9 +211,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "ai-use-policy": {
         "title": "AI use policy",
@@ -159,6 +242,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -169,7 +255,7 @@
         "tags": [],
         "type": "static",
         "date": "2026-10-05 17:44:34",
-        "dateModified": "2026-10-07 16:06:03",
+        "dateModified": "2026-10-08 16:23:59",
         "position": 21,
         "coverImage": "",
         "category": "",
@@ -183,6 +269,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": "https:\/\/accessiblepalette.uk\/"
             }
         }
     },
@@ -207,6 +296,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -228,9 +320,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "accessibility-statement": {
         "title": "Accessibility statement",
@@ -252,6 +350,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -277,6 +378,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -298,9 +402,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-323b1c80f767f40a5755cfb391c1c324": {
         "title": "Accessible Web Design and Development[Autosave]",
@@ -320,9 +430,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-9bc396099430221fa81a562a0a9bcb7d": {
         "title": "About[Autosave]",
@@ -342,9 +458,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-e0d2c7be83ad3e4d44c20d1d6d2aca46": {
         "title": "Services[Autosave]",
@@ -364,9 +486,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-f8309a8ddb5e1bdb1d62f236feb0603d": {
         "title": "Home[Autosave]",
@@ -386,9 +514,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "services\/accessible-web-design-and-development": {
         "title": "Accessible Web Design and Development",
@@ -410,6 +544,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -435,6 +572,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -458,6 +598,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -483,6 +626,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -506,6 +652,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -531,6 +680,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -555,6 +707,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -578,6 +733,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -604,6 +762,9 @@
             "0": false,
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -629,6 +790,9 @@
             "0": false,
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -653,6 +817,9 @@
         "custom": {
             "0": false,
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -682,6 +849,9 @@
             },
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -709,6 +879,9 @@
                 "value": ""
             },
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -738,6 +911,9 @@
             },
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -765,6 +941,9 @@
                 "value": ""
             },
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
@@ -794,6 +973,9 @@
             },
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -822,6 +1004,9 @@
             },
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -846,6 +1031,9 @@
         "custom": {
             "subtitle": {
                 "value": ""
+            },
+            "externalUrl": {
+                "value": ""
             }
         }
     },
@@ -869,6 +1057,9 @@
         "noarchive": false,
         "custom": {
             "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
                 "value": ""
             }
         }
