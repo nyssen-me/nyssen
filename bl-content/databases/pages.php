@@ -1,5 +1,77 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "resources\/accessibility-audit-tool": {
+        "title": "Accessibility Audit Tool",
+        "description": "A self-contained web application for conducting WCAG 2.2 Level AA accessibility audits. Built as a single HTML file with no dependencies.",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-08 15:42:32",
+        "dateModified": "",
+        "position": 24,
+        "coverImage": "",
+        "category": "",
+        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "uuid": "5fcc76747327b57f189bf9277d7aa707",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
+    "resources\/accessibility-laws-standards": {
+        "title": "Accessibility Laws &amp; Standards",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-08 15:39:00",
+        "dateModified": "",
+        "position": 23,
+        "coverImage": "",
+        "category": "",
+        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "uuid": "960e2be58bcdbf3d1b1995ba98ab76e7",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
+    "resources\/accessibility-toolkit": {
+        "title": "Accessibility toolkit",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "static",
+        "date": "2026-10-08 15:37:36",
+        "dateModified": "",
+        "position": 22,
+        "coverImage": "",
+        "category": "",
+        "md5file": "d41d8cd98f00b204e9800998ecf8427e",
+        "uuid": "1b8bd534679878ebee761385c53e989d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": {
+            "subtitle": {
+                "value": ""
+            }
+        }
+    },
     "autosave-479f236b3a4167412cc78814b16f6be8": {
         "title": "Resources[Autosave]",
         "description": "",
