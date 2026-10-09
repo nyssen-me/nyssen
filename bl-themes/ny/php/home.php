@@ -104,7 +104,10 @@
                                 
                                 
                                 <?php if ($currentPage->readMore()): // Page content until the pagebreak ?>
-                                    <div><?php echo $currentPage->contentBreak(); ?></div>
+                                    <?php $intro = trim(preg_replace('#<p>\s*$#', '', $currentPage->contentBreak())); // Drop the <p> TinyMCE wraps the pagebreak in ?>
+                                    <?php if ($intro !== ''): ?>
+                                    <div><?php echo $intro; ?></div>
+                                    <?php endif; ?>
                                     <a href="<?php echo $currentPage->permalink(); ?>"><?php echo $L->get('Read more about me'); ?></a>
                                 <?php else: ?>
                                     <div><?php echo $currentPage->content(); ?></div>
