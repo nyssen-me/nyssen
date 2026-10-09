@@ -64,7 +64,7 @@
                     <h2 class="section-title">Let’s talk</h2>
 
                     <p>If you’d like to talk about your website or documents, I’d be happy to hear from you.</p>
-                    <p><a href="#">Get in touch</a></p>
+                    <p>Email me at <a href="mailto:hello@nyssen.me">hello<!--antispam code-->@<!--va-bene-->nyssen.me</a>.</p>
 
                 </div>
             </div>
