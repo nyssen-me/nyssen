@@ -23,8 +23,6 @@
 
                     <?php Theme::plugins('pageBegin'); // Load Bludit Plugins: Page Begin ?>
                     
-                    <!-- <h2 class="page-title"><?php echo $page->title(); ?></h2> -->
-                    
                     <div><?php echo $page->contentBreak(); // Page content until the pagebreak ?></div>
 
                     <?php if ($page->readMore()): // Shows "read more" button if necessary ?>
@@ -54,7 +52,7 @@
                         $servicesPage = new Page('services');
                     ?>
                     <!-- Not a heading: the service titles below are the h2s -->
-                    <p id="services-label" class="section-label"><?php echo $servicesPage->title(); ?></p>
+                    <p id="services-label" class="section-label section-title"><?php echo $servicesPage->title(); ?></p>
                     
                     <ul class="services-list">
                         <?php foreach ($serviceChildren as $childKey):
@@ -76,8 +74,8 @@
     </section>
 
 
-    <section>
-        <div class="container container-narrow padding-top-none">
+    <section class="about-section">
+        <div class="container container-narrow">
             <div class="row">
                 <div class="column">
 
@@ -92,17 +90,22 @@
                             $currentPage = new Page($pageKey);
                             ?>
 
-                                <h2><?php echo $currentPage->title(); ?></h2>
+                                <h2 class="section-title"><?php echo $currentPage->title(); ?></h2>
 
 
                                 <?php if ($currentPage->description()): ?>
-                                    <p class="excerpt"><?php echo $currentPage->description(); ?></p>
+                                    <div class="excerpt">
+                                        <?php // Split the description on blank lines so each block becomes its own paragraph ?>
+                                        <?php foreach (preg_split('/\R\s*\R/', trim($currentPage->description())) as $paragraph): ?>
+                                        <p><?php echo nl2br(trim($paragraph)); ?></p>
+                                        <?php endforeach; ?>
+                                    </div>
                                 <?php endif; ?>
                                 
                                 
                                 <?php if ($currentPage->readMore()): // Page content until the pagebreak ?>
                                     <div><?php echo $currentPage->contentBreak(); ?></div>
-                                    <a class="button" href="<?php echo $currentPage->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+                                    <a href="<?php echo $currentPage->permalink(); ?>"><?php echo $L->get('Read more about me'); ?></a>
                                 <?php else: ?>
                                     <div><?php echo $currentPage->content(); ?></div>
                                 <?php endif; ?>
