@@ -26,6 +26,21 @@
     margin-bottom: 6rem;
 }
 
+.section-title {
+    position: relative;
+}
+
+/* .section-title::before {
+    content: "";
+    width: 1.2rem;
+    position: absolute;
+    height: 1.2rem;
+    top: 2.5rem;
+    left: -2.5rem;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+} */
+
 .page h2,
 .page h3,
 .page h4,
@@ -160,7 +175,13 @@
     }
 }
 
-/* About — Image gallery */
+/* Home page — About section */
+.about-section a {
+    font-size: var(--body-font-size-md);
+    font-weight: 500;
+}
+
+/* About page — Image gallery */
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));

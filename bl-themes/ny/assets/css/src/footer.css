@@ -48,8 +48,8 @@
     flex-direction: column;
     align-items: baseline;
     gap: 1.5rem 4rem;
-    font-size: var(--font-size-base);
-    padding-top: 4rem;
+    font-size: var(--font-size-sm);
+    padding-top: 2rem;
     margin-top: 1rem;
 }
 
