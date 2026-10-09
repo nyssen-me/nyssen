@@ -1,5 +1,27 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
+        "title": "About[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-09 12:40:40",
+        "dateModified": "2026-10-09 12:58:40",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "3582537679cfc3a117b12f98c1b134dd",
+        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
     "autosave-5fcc76747327b57f189bf9277d7aa707": {
         "title": "Accessibility Audit Tool[Autosave]",
         "description": "",
@@ -440,34 +462,6 @@
             }
         }
     },
-    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
-        "title": "About[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2026-03-06 18:46:39",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "7df82c189687316adf82d7ddd045c4b0",
-        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
     "autosave-e0d2c7be83ad3e4d44c20d1d6d2aca46": {
         "title": "Services[Autosave]",
         "description": "",
@@ -503,7 +497,7 @@
         "tags": [],
         "type": "autosave",
         "date": "2026-03-06 13:11:04",
-        "dateModified": "2026-05-15 10:28:14",
+        "dateModified": "2026-10-09 12:36:02",
         "position": 0,
         "coverImage": "",
         "category": "",
@@ -514,15 +508,9 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
+        "custom": [
+            false
+        ]
     },
     "services\/accessible-web-design-and-development": {
         "title": "Accessible Web Design and Development",
@@ -1039,16 +1027,16 @@
     },
     "about": {
         "title": "About",
-        "description": "This is the description of the About page.",
+        "description": "I've been building and designing websites for more than 20 years. From the early days of table-based layouts to responsive design, I've always been interested in making the web work better for everyone.\r\n\r\nToday, I bring that experience to digital accessibility, helping make websites and documents accessible to all.",
         "username": "admin",
         "tags": [],
         "type": "static",
         "date": "2025-10-11 11:03:03",
-        "dateModified": "2026-03-06 18:44:38",
+        "dateModified": "2026-10-09 12:38:40",
         "position": 3,
         "coverImage": "",
         "category": "general",
-        "md5file": "894fe58f834ad9c6edcb3609d041320f",
+        "md5file": "4e23c998d7a2537602e0e89bdc5d0614",
         "uuid": "9bc396099430221fa81a562a0a9bcb7d",
         "allowComments": true,
         "template": "",
