@@ -25,6 +25,25 @@ body {
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased;
 	border: 0.7rem solid var(--font-color);
+    /* Always fill the screen so the border reaches the bottom on short pages (border-box, so the border is included) */
+    min-height: 100vh;
+    min-height: 100dvh;
+    /* Column layout so main can push the footer to the bottom on short pages */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Take up the spare height so the footer sits at the bottom of the screen */
+main {
+    flex: 1 0 auto;
+}
+
+/* Back to normal flow when printing, as some browsers cut off flex content across pages */
+@media print {
+    body {
+        display: block;
+        min-height: 0;
+    }
 }
 
 a {
