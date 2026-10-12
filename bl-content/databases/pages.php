@@ -1,5 +1,49 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-323b1c80f767f40a5755cfb391c1c324": {
+        "title": "Accessible Web Design and Development[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-12 13:48:17",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "10bd0bf06dd73c85cd21197a3ebed457",
+        "uuid": "autosave-323b1c80f767f40a5755cfb391c1c324",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
+    "autosave-04671fcae642a1965ec5346a7fe51908": {
+        "title": "Accessibility Training and Ongoing Support[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-12 13:41:49",
+        "dateModified": "2026-10-12 13:43:48",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "5c13757a562557aff3c773c44ff48e48",
+        "uuid": "autosave-04671fcae642a1965ec5346a7fe51908",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
     "autosave-546a40b4a8f8764a46561566a925fc0f": {
         "title": "Page not found[Autosave]",
         "description": "",
@@ -468,7 +512,7 @@
         "tags": [],
         "type": "autosave",
         "date": "2026-05-15 09:39:08",
-        "dateModified": "",
+        "dateModified": "2026-10-12 11:03:21",
         "position": 0,
         "coverImage": "",
         "category": "",
@@ -479,43 +523,9 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "autosave-323b1c80f767f40a5755cfb391c1c324": {
-        "title": "Accessible Web Design and Development[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2026-03-06 19:08:12",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "92512996a5536831cf1b853b3f9e9dfc",
-        "uuid": "autosave-323b1c80f767f40a5755cfb391c1c324",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
+        "custom": [
+            false
+        ]
     },
     "autosave-e0d2c7be83ad3e4d44c20d1d6d2aca46": {
         "title": "Services[Autosave]",
@@ -575,16 +585,16 @@
     },
     "services\/accessible-web-design-and-development": {
         "title": "Accessible Web Design and Development",
-        "description": "Custom websites designed and built to be fully accessible, with usability and performance at the core of every decision.",
+        "description": "Custom websites designed and built to meet WCAG 2.2 AA from the start, with usability and performance at the core of every decision.",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2026-03-06 11:27:02",
-        "dateModified": "2026-03-06 19:06:12",
-        "position": 96,
+        "dateModified": "2026-10-12 13:46:16",
+        "position": 94,
         "coverImage": "",
         "category": "",
-        "md5file": "92512996a5536831cf1b853b3f9e9dfc",
+        "md5file": "def2232ce7dafc27ba6e0cedb5d49d29",
         "uuid": "323b1c80f767f40a5755cfb391c1c324",
         "allowComments": true,
         "template": "single-service",
@@ -600,45 +610,18 @@
             }
         }
     },
-    "services\/ongoing-monitoring-and-support": {
-        "title": "Ongoing Monitoring and Support",
-        "description": "Regular checks and ongoing assistance to make sure your digital products stay compliant as your content and technology evolve.",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "static",
-        "date": "2026-03-06 11:26:16",
-        "dateModified": "2026-05-15 09:37:01",
-        "position": 95,
-        "coverImage": "",
-        "category": "",
-        "md5file": "24133c47a66448d8c16f4be44ed270f1",
-        "uuid": "53e1c88ae1e6ec42ca6353f8d6ac4538",
-        "allowComments": true,
-        "template": "single-service",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "services\/accessibility-training-and-support": {
-        "title": "Accessibility Training and Support",
-        "description": "Practical, tailored training sessions to help your team create and maintain accessible content, documents, and websites.",
+    "services\/accessibility-training-and-ongoing-support": {
+        "title": "Accessibility Training and Ongoing Support",
+        "description": "Practical training for your team and regular support to help you create, maintain, and keep accessible websites and documents over time.",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2026-03-06 11:25:18",
-        "dateModified": "2026-03-06 19:05:44",
-        "position": 94,
+        "dateModified": "2026-10-12 13:41:47",
+        "position": 93,
         "coverImage": "",
         "category": "",
-        "md5file": "b6a83ae67da10c05bdc898be9a1d1170",
+        "md5file": "20433c6bfd900cda7d8d01ab174c2a1d",
         "uuid": "04671fcae642a1965ec5346a7fe51908",
         "allowComments": true,
         "template": "single-service",
@@ -656,44 +639,17 @@
     },
     "services\/accessible-document-creation-and-remediation": {
         "title": "Accessible Document Creation and Remediation",
-        "description": "New documents built accessibly from the start, or existing PDFs, Word files, and presentations fixed so they work for everyone.",
+        "description": "Accessible documents created from scratch or existing PDFs, Word files and presentations remediated to make their content easier for everyone to access, navigate and understand.",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2026-03-06 11:24:30",
-        "dateModified": "2026-03-06 19:05:24",
-        "position": 93,
-        "coverImage": "",
-        "category": "",
-        "md5file": "956327625a4f18bc36663a2fbf7090a2",
-        "uuid": "c4bef7a958bf38b4e04dab01ec2cea24",
-        "allowComments": true,
-        "template": "single-service",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "services\/accessibility-testing-and-implementation": {
-        "title": "Accessibility Testing and implementation",
-        "description": "Hands-on testing using automated tools, manual checks, and assistive technology, followed by practical fixes to bring everything up to standard.",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "static",
-        "date": "2026-03-06 11:23:29",
-        "dateModified": "2026-03-06 19:05:09",
+        "dateModified": "2026-10-12 15:55:01",
         "position": 92,
         "coverImage": "",
         "category": "",
-        "md5file": "9a3b7d32e7ca73481c08e37987235691",
-        "uuid": "e8d0c44dacf838843ea6cc51acc1889f",
+        "md5file": "479f49350bb3c18b3a3f0ea705ba894a",
+        "uuid": "c4bef7a958bf38b4e04dab01ec2cea24",
         "allowComments": true,
         "template": "single-service",
         "noindex": false,
@@ -710,16 +666,16 @@
     },
     "services\/accessibility-auditing": {
         "title": "Accessibility Auditing",
-        "description": "A comprehensive review of your website or digital product against WCAG 2.2 AA standards, with a detailed report and clear recommendations.",
+        "description": "A full review of your website against WCAG 2.2 AA standards, delivered with a clear, prioritised report and practical recommendations so you know exactly where you stand and what to do next.",
         "username": "nyadmin",
         "tags": [],
         "type": "static",
         "date": "2026-03-06 11:22:12",
-        "dateModified": "2026-03-06 19:04:40",
+        "dateModified": "2026-10-12 15:56:17",
         "position": 91,
         "coverImage": "",
         "category": "",
-        "md5file": "7e8bed52357f8299dcce4ac4411a220e",
+        "md5file": "c81bae4d7f18695724ab519c6f6a53e6",
         "uuid": "afc26aad6f4172d91809f8bf0711de7f",
         "allowComments": true,
         "template": "single-service",

@@ -1,1 +1,12 @@
-<p class="MsoNormal">Whether you need new documents built to accessibility standards from the start, or existing PDFs, Word files, and presentations fixed to be accessible, I can help. This includes proper heading structure, reading order, alternative text, form labels, and everything needed to ensure your documents work for everyone.</p>
+<p>Accessible documents are essential for inclusive communication, whether they are reports, forms, presentations, or policy documents.</p>
+<p>I can create new documents that meet accessibility standards from the outset, or remediate existing ones so they work properly with assistive technologies. This covers Microsoft Word files, PDFs, PowerPoint presentations, and similar formats.</p>
+<p>Work typically includes:</p>
+<ul>
+<li>Correct heading structure and logical reading order</li>
+<li>Meaningful alternative text for images and graphics</li>
+<li>Properly labelled form fields and interactive elements</li>
+<li>Sufficient colour contrast and clear visual hierarchy</li>
+<li>Tags, bookmarks, and other structural elements required for accessible PDFs</li>
+</ul>
+<p>You receive documents that are usable by people who rely on screen readers, keyboard navigation, or other assistive tools, while still looking professional and meeting your organisation’s branding requirements.</p>
+<p>Whether you need a single important document made accessible or a larger set of files brought up to standard, the process is practical and collaborative, with clear communication at every stage.</p>
