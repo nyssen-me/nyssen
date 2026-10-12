@@ -1,5 +1,27 @@
 <?php defined('BLUDIT') or die('Bludit CMS.'); ?>
 {
+    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
+        "title": "About[Autosave]",
+        "description": "",
+        "username": "nyadmin",
+        "tags": [],
+        "type": "autosave",
+        "date": "2026-10-12 18:14:55",
+        "dateModified": "",
+        "position": 0,
+        "coverImage": "",
+        "category": "",
+        "md5file": "fb162f903439ba21776fee6642881b03",
+        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
+        "allowComments": true,
+        "template": "",
+        "noindex": false,
+        "nofollow": false,
+        "noarchive": false,
+        "custom": [
+            false
+        ]
+    },
     "autosave-323b1c80f767f40a5755cfb391c1c324": {
         "title": "Accessible Web Design and Development[Autosave]",
         "description": "",
@@ -85,34 +107,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "autosave-9bc396099430221fa81a562a0a9bcb7d": {
-        "title": "About[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2026-10-09 15:46:32",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "306762958ebacd96033275fd3354f516",
-        "uuid": "autosave-9bc396099430221fa81a562a0a9bcb7d",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
             "subtitle": {
                 "value": ""
             },
@@ -945,11 +939,11 @@
         "tags": [],
         "type": "static",
         "date": "2025-10-11 11:03:03",
-        "dateModified": "2026-10-09 15:44:31",
+        "dateModified": "2026-10-12 18:12:55",
         "position": 3,
         "coverImage": "",
         "category": "general",
-        "md5file": "d8fdbb80036430600c2133e6338fa610",
+        "md5file": "fa9ef343a150a193f2195690151d5367",
         "uuid": "9bc396099430221fa81a562a0a9bcb7d",
         "allowComments": true,
         "template": "about",

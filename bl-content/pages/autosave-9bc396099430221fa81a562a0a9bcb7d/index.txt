@@ -1,5 +1,5 @@
 <p><!-- pagebreak --></p>
-<p>I make accessible websites and documents, and I help teams do the same.</p>
+<p>I'm Sergi Duran Nyssen, and I make accessible websites and documents and help teams do the same.</p>
 <p>I have spent more than two decades designing and building websites. When I started, most sites were still made with tables. Then responsive design appeared: content on one side, styling on the other. This separation felt right to me from the beginning. I specialised in responsive design and later moved to Cape Town to work as a responsive web design specialist.</p>
 <p>After a short time in London I spent a few years freelancing in sunny <a href="https://en.wikipedia.org/wiki/Empord%C3%A0">Empordà</a>, in the north-east of Catalonia, and then the UK, where I’ve worked for a couple of agencies and built dozens of websites, always with accessibility in mind, even before I knew the word for it.</p>
 <p>Over the years, I’ve come to see it like this. Responsive design makes a website adapt to the device. Accessibility makes it adapt to the person. For me, it’s the same path, one step further.</p>
