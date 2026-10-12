@@ -1,0 +1,16 @@
+<p>Sorry, I can't find the page you were looking for. It may have moved or been removed, or the address may be mistyped or out of date.</p>
+<h2>What you can do</h2>
+<ul>
+<li>If you typed the address, check it for spelling mistakes.</li>
+<li>Go to the <a href="http://nyssen/">homepage</a>.</li>
+<li>Use the main navigation to browse the site.</li>
+</ul>
+<h2>Popular pages</h2>
+<ul>
+<li><a href="http://nyssen/services">Services</a>: accessibility audits, testing, training, accessible web design and document remediation.</li>
+<li><a href="http://nyssen/resources">Resources</a>: free accessibility tools, including a colour contrast checker and an accessibility toolkit.</li>
+<li><a href="http://nyssen/about">About</a>: who I am and how I work.</li>
+<li><a href="http://nyssen/accessibility-statement">Accessibility statement</a>: how this site is made accessible, and how to report a problem.</li>
+</ul>
+<h2>Still can't find it?</h2>
+<p>Email me at <a href="mailto:hello@nyssen.me">hello@nyssen.me</a> and tell me what you were looking for. If a link on this site or another website brought you here, please let me know where you found it so I can fix it.</p>
