@@ -1,5 +1,5 @@
 <p>A website should work well for everyone who needs to use it. I design and build custom websites that meet WCAG 2.2 AA standards from the start, rather than trying to fix accessibility issues later.</p>
-<p>Every project prioritises:</p>
+<p><strong>Every project prioritises</strong>:</p>
 <ul>
 <li>Semantic HTML and clear structure</li>
 <li>Full keyboard accessibility and visible focus states</li>
