@@ -39,7 +39,7 @@
 :root {
     --body-font-size-md: 1.9rem;
     --body-font-size-lg: 2.1rem;
-    --body-font-size-xl: 2.8rem;
+    --body-font-size-xl: 2.7rem;
 
     --font-size-xs: 1.2rem;
     --font-size-sm: 1.4rem;
@@ -57,7 +57,7 @@
     :root {
         --body-font-size-md: 1.8rem;
         --body-font-size-lg: 1.9rem;
-        --body-font-size-xl: 2.5rem;
+        --body-font-size-xl: 2.6rem;
 
         --font-size-sm: 1.3rem;
         --font-size-base: 1.5rem;
@@ -75,7 +75,7 @@
     :root {
         --body-font-size-md: 1.7rem;
         --body-font-size-lg: 1.8rem;
-        --body-font-size-xl: 2.2rem;
+        --body-font-size-xl: 2.3rem;
 
         --font-size-base: 1.4rem;
         --font-size-md: 1.7rem;

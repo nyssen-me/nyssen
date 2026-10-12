@@ -95,6 +95,7 @@
 
 .text-large {
     font-size: var(--body-font-size-lg);
+    margin-bottom: 3.5rem;
 }
 
 .page-intro {

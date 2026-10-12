@@ -2,20 +2,41 @@
 
     <section>
         <div class="container container-narrow padding-short">
-            <div class="row">
+            <div class="row reverse">
                 <div class="column">
         
                     <?php Theme::plugins('pageBegin'); // Load Bludit Plugins: Page Begin ?>
                     
-                    <h1 class="page-title"><?php echo $page->title(); ?></h1>
-                    
-                    <?php if ($page->coverImage()): ?>
-                    <div class="" style="background-image: url('<?php echo $page->coverImage(); ?>'); background-repeat: no-repeat; margin: 0 auto; width: 940px;">
-                        <div style="height: 300px;"></div>
-                    </div>
-                    <?php endif ?>
-                
+                    <h1 class="page-title page-title-service"><?php echo $page->title(); ?></h1>
+
                     <div class="page-content"><?php echo $page->content(); ?></div>
+
+
+                    <?php Theme::plugins('pageEnd'); // Load Bludit Plugins: Page End ?>
+        
+                </div>
+
+                <div class="column column-25 column-offset-5">
+
+                    <?php
+                    // Cover image (decorative). SVGs are printed inline so they can use
+                    // currentColor and var(--accent-color) and follow the light/dark theme.
+                    if ($page->coverImage()):
+                        $coverFile = PATH_UPLOADS_PAGES . $page->uuid() . DS . $page->coverImage(false);
+                        if (strtolower(pathinfo($coverFile, PATHINFO_EXTENSION)) === 'svg' && is_file($coverFile)): ?>
+                    <div class="service-image" aria-hidden="true">
+                        <?php echo preg_replace(array('/<\?xml.*?\?>/s', '/<!DOCTYPE[^>]*>/i'), '', file_get_contents($coverFile)); ?>
+                    </div>
+                        <?php else: ?>
+                    <img class="service-image" src="<?php echo $page->coverImage(); ?>" alt="">
+                        <?php endif; ?>
+                    <?php endif; ?>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
 
                     <?php
                     // Next / Previous service navigation
@@ -35,12 +56,8 @@
                         <?php endif; ?>
                     </nav>
                     <?php endif; ?>
-
-                    <?php Theme::plugins('pageEnd'); // Load Bludit Plugins: Page End ?>
-        
+                    
                 </div>
-
-                <div class="column column-25 column-offset-5"></div>
             </div>
         </div>
     </section>

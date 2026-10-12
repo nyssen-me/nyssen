@@ -18,7 +18,7 @@ body {
 	font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif, sans-serif;
 	color: var(--font-color);
     background-color: var(--bg-color);
-	font-size: var(--font-size-md);
+	font-size: var(--body-font-size-md);
     font-weight: 400;
     letter-spacing: .01em;
     line-height: 1.7;
@@ -111,12 +111,12 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     line-height: 1.25;
 }
 
 h3 {
-    font-size: var(--font-size-lg);
+    font-size: var(--body-font-size-xl);
     line-height: 1.35;
 }
 
@@ -127,13 +127,13 @@ h4 {
 }
 
 h5 {
-    font-size: var(--font-size-md);
+    font-size: var(--body-font-size-lg);
     letter-spacing: -.05rem;
     line-height: 1.5;
 }
 
 h6 {
-    font-size: var(--font-size-base);
+    font-size: var(--body-font-size-md);
     letter-spacing: 0;
     line-height: 1.4;
 }
