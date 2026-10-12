@@ -384,9 +384,9 @@
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2026-05-15 09:54:49",
-        "dateModified": "",
+        "dateModified": "2026-10-12 10:35:41",
         "position": 97,
         "coverImage": "",
         "category": "",
@@ -679,9 +679,9 @@
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2026-02-06 16:12:32",
-        "dateModified": "2026-02-06 16:30:00",
+        "dateModified": "2026-10-12 10:35:27",
         "position": 90,
         "coverImage": "",
         "category": "",
@@ -728,70 +728,14 @@
             }
         }
     },
-    "autosave-a3009da89c523420f6a6c02b619efd14": {
-        "title": "Portfolio[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-21 11:49:45",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "ddb9ff758690c7d3a8f934a7a2a5f196",
-        "uuid": "autosave-a3009da89c523420f6a6c02b619efd14",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "autosave-2dd3f7400214108445611c0ce0454100": {
-        "title": "Tour of the Borders[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-15 09:49:38",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "29699c46cb82f02d70c81c8b942def55",
-        "uuid": "autosave-2dd3f7400214108445611c0ce0454100",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "portfolio\/tour-of-the-borders": {
+    "tour-of-the-borders": {
         "title": "Tour of the Borders",
         "description": "This is the description of the Touro!",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2025-11-14 18:42:54",
-        "dateModified": "2025-11-15 09:47:37",
+        "dateModified": "2026-10-12 10:34:10",
         "position": 14,
         "coverImage": "tour-o-the-border.webp",
         "category": "",
@@ -803,7 +747,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
             "subtitle": {
                 "value": ""
             },
@@ -812,14 +755,14 @@
             }
         }
     },
-    "portfolio\/edet\u00e0ria-organic-grenache-wines": {
+    "edet\u00e0ria-organic-grenache-wines": {
         "title": "Edet\u00e0ria - Organic Grenache Wines",
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2025-11-14 18:38:04",
-        "dateModified": "2025-11-14 19:01:28",
+        "dateModified": "2026-10-12 10:33:52",
         "position": 13,
         "coverImage": "edetaria.webp",
         "category": "",
@@ -831,10 +774,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             },
@@ -843,45 +782,14 @@
             }
         }
     },
-    "autosave-6b1f6e434e77fb376a1675694c5ae6ec": {
-        "title": "Bella Lola bikinis[Autosave]",
-        "description": "",
-        "username": "nyadmin",
-        "tags": [],
-        "type": "autosave",
-        "date": "2025-11-14 18:29:52",
-        "dateModified": "",
-        "position": 0,
-        "coverImage": "",
-        "category": "",
-        "md5file": "0d3dd3572a7c7a6c38bf129fc8021c6d",
-        "uuid": "autosave-6b1f6e434e77fb376a1675694c5ae6ec",
-        "allowComments": true,
-        "template": "",
-        "noindex": false,
-        "nofollow": false,
-        "noarchive": false,
-        "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
-            "subtitle": {
-                "value": ""
-            },
-            "externalUrl": {
-                "value": ""
-            }
-        }
-    },
-    "portfolio\/bella-lola-bikinis": {
+    "bella-lola-bikinis": {
         "title": "Bella Lola bikinis",
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2025-11-14 13:11:40",
-        "dateModified": "2025-11-14 18:27:51",
+        "dateModified": "2026-10-12 10:33:30",
         "position": 12,
         "coverImage": "bellalola.webp",
         "category": "",
@@ -893,10 +801,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             },
@@ -905,14 +809,14 @@
             }
         }
     },
-    "portfolio\/the-royal-society-of-edinburgh": {
+    "the-royal-society-of-edinburgh": {
         "title": "The Royal Society of Edinburgh",
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2025-11-14 09:00:52",
-        "dateModified": "2025-11-14 19:04:42",
+        "dateModified": "2026-10-12 10:32:56",
         "position": 11,
         "coverImage": "rse.webp",
         "category": "",
@@ -924,10 +828,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             },
@@ -972,9 +872,9 @@
         "description": "",
         "username": "nyadmin",
         "tags": [],
-        "type": "static",
+        "type": "draft",
         "date": "2025-11-07 17:25:43",
-        "dateModified": "2025-11-14 17:29:19",
+        "dateModified": "2026-10-12 10:34:21",
         "position": 10,
         "coverImage": "",
         "category": "",
@@ -986,10 +886,6 @@
         "nofollow": false,
         "noarchive": false,
         "custom": {
-            "0": false,
-            "excerpt": {
-                "value": ""
-            },
             "subtitle": {
                 "value": ""
             },
