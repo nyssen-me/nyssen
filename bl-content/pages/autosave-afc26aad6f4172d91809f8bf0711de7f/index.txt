@@ -1,0 +1,23 @@
+<p>An accessible website should work for everyone, including people with disabilities who use assistive technologies or interact with websites in different ways. An accessibility audit helps you understand how well your website meets recognised accessibility standards and what needs to improve.</p>
+<p>I evaluate your website against the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA, using a combination of automated tools and manual testing.</p>
+<p>The audit covers key aspects of web accessibility, including:</p>
+<ul>
+<li>Keyboard accessibility, ensuring that users can navigate and interact with your website without a mouse.</li>
+<li>Screen reader compatibility, checking that content and interactive elements are accessible to people using assistive technologies.</li>
+<li>Colour contrast and visual presentation, helping ensure that text and other important elements are easy to perceive.</li>
+<li>Navigation and page structure, including headings, links, menus and interactive components.</li>
+<li>Forms and user interactions, checking labels, instructions, error messages and other features that help users complete tasks.</li>
+<li>Content and other accessibility requirements, including alternative text for images and other relevant WCAG criteria.</li>
+</ul>
+<p>The audit covers a representative selection of pages, components and user journeys, based on the size and complexity of your website and the agreed scope of the assessment.</p>
+<h2>What you'll receive</h2>
+<p>At the end of the audit, you'll receive a detailed report that includes:</p>
+<ul>
+<li>Identified accessibility issues, with examples and evidence where useful.</li>
+<li>User impact, explaining how each issue may affect people accessing your website.</li>
+<li>WCAG references, identifying the relevant success criteria.</li>
+<li>Practical recommendations, explaining how to address the issues.</li>
+<li>Prioritised findings, helping you understand which issues need attention first.</li>
+</ul>
+<p>The report will give your organisation a clearer picture of its website's accessibility and help your development team plan and implement the necessary improvements. It will also provide a useful reference for future accessibility work.</p>
+<p>Whether you're reviewing an existing website, preparing for a redesign or working towards meeting accessibility requirements, an accessibility audit is a valuable first step towards creating a more inclusive digital experience.</p>
