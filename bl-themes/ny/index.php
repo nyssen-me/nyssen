@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-precomposed.png">
 
-	<?php echo Theme::css('assets/css/style.css?ver=1.12'); ?>
+	<?php echo Theme::css('assets/css/style-min.css?ver=1.12'); ?>
 
     <!-- Prevent theme flash - applies saved theme before render (no saved theme = system theme) -->
     <script>
