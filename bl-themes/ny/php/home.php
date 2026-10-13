@@ -51,15 +51,14 @@
                     if (!empty($serviceChildren)):
                         $servicesPage = new Page('services');
                     ?>
-                    <!-- Not a heading: the service titles below are the h2s -->
-                    <p id="services-label" class="section-label section-title"><?php echo $servicesPage->title(); ?></p>
-                    
+                    <h2 id="services-label" class="section-title"><?php echo $servicesPage->title(); ?></h2>
+
                     <ul class="services-list">
                         <?php foreach ($serviceChildren as $childKey):
                             $childPage = new Page($childKey);
                         ?>
                         <li>
-                            <h2><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h2>
+                            <h3><a href="<?php echo $childPage->permalink(); ?>"><?php echo $childPage->title(); ?></a></h3>
                             <?php if ($childPage->description()): ?>
                             <p><?php echo $childPage->description(); ?></p>
                             <?php endif; ?>

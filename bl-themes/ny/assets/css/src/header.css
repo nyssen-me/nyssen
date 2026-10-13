@@ -130,6 +130,14 @@
     border-radius: 50%;
 }
 
+/* Windows contrast themes drop background colours, so keep the dot visible */
+@media (forced-colors: active) {
+    .main-nav ul li a.active::before {
+        background-color: CanvasText;
+        forced-color-adjust: none;
+    }
+}
+
 /* Theme switcher: sun = light theme on, moon = dark theme on */
 .theme-toggle {
     position: absolute;

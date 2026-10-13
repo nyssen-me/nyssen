@@ -26,9 +26,7 @@
 <li><strong>Generate the report</strong> — click Generate report at the bottom right. A HTML file downloads automatically. Open it in any browser to view or print it.</li>
 <li><strong>Return to the audit list</strong> — click All audits in the header or footer at any time. Your current progress is saved automatically. From the list you can resume any previous audit, start a new one, export a backup, or delete audits you no longer need.</li>
 </ol>
-<blockquote>
 <p><strong>Note:</strong> All audits are saved in your browser automatically. If you close the tab and reopen the tool in the same browser on the same machine, your audits will be there. Audits are not shared between different browsers or different machines. To keep a permanent backup, use <strong>Export all</strong> on the audit list page to download a <code>.json</code> file you can import later.</p>
-</blockquote>
 <h2>Managing multiple audits</h2>
 <p>The tool supports multiple saved audits at once. Each audit is stored independently under a unique ID, so you can run and return to as many audits as you like without any configuration changes.</p>
 <h3>Starting a new audit</h3>

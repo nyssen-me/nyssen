@@ -22,7 +22,8 @@ body {
     font-weight: 400;
     letter-spacing: .01em;
     line-height: 1.7;
-    overflow-x: hidden !important;
+    /* Long words and URLs wrap instead of overflowing (reflow at 320px / 400% zoom) */
+    overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
 	border: 0.7rem solid var(--font-color);
     /* Always fill the screen so the border reaches the bottom on short pages (border-box, so the border is included) */
@@ -244,7 +245,7 @@ ul {
 }
 
 ul li::marker {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 dd,

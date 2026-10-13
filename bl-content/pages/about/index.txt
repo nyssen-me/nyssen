@@ -4,5 +4,5 @@
 <p>After a short time in London I spent a few years freelancing in sunny <a href="https://en.wikipedia.org/wiki/Empord%C3%A0">Empordà</a>, in the north-east of Catalonia, and then the UK, where I’ve worked for a couple of agencies and built dozens of websites, always with accessibility in mind, even before I knew the word for it.</p>
 <p>Over the years, I’ve come to see it like this. Responsive design makes a website adapt to the device. Accessibility makes it adapt to the person. For me, it’s the same path, one step further.</p>
 <p>Today I focus fully on digital accessibility. I help organisations create websites and documents that work for everyone, run accessibility tests and audits, and train teams on how to design and write accessibly.</p>
-<p class="MsoNormal">Outside work I enjoy walking, photography, cycling, mountain hiking, cooking, and spending time with family and friends.<o:p></o:p></p>
+<p>Outside work I enjoy walking, photography, cycling, mountain hiking, cooking, and spending time with family and friends.</p>
 <p>Here are a few photographs of places, moments and things that mean something special to me.</p>

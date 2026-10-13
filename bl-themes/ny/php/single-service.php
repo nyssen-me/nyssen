@@ -47,12 +47,12 @@
                     $nextPage = ($currentIndex < count($siblings) - 1) ? new Page($siblings[$currentIndex + 1]) : null;
 
                     if ($prevPage || $nextPage): ?>
-                    <nav class="service-nav" aria-label="<?php $L->get('Services navigation'); ?>">
+                    <nav class="service-nav" aria-label="More services">
                         <?php if ($prevPage): ?>
-                        <a class="service-nav__link service-nav__prev" href="<?php echo $prevPage->permalink(); ?>"><span><?php echo $prevPage->title(); ?></span></a>
+                        <a class="service-nav__link service-nav__prev" href="<?php echo $prevPage->permalink(); ?>"><span><span class="visually-hidden">Previous service: </span><?php echo $prevPage->title(); ?></span></a>
                         <?php endif; ?>
                         <?php if ($nextPage): ?>
-                        <a class="service-nav__link service-nav__next" href="<?php echo $nextPage->permalink(); ?>"><span><?php echo $nextPage->title(); ?></span></a>
+                        <a class="service-nav__link service-nav__next" href="<?php echo $nextPage->permalink(); ?>"><span><span class="visually-hidden">Next service: </span><?php echo $nextPage->title(); ?></span></a>
                         <?php endif; ?>
                     </nav>
                     <?php endif; ?>

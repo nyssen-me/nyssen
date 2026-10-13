@@ -25,11 +25,11 @@
 </ul>
 <h3>Additional Features</h3>
 <ul>
-<li><strong>Reset All Settings - Returns all settings to defaults</strong></li>
-<li><strong>Automatic Settings Persistence - User preferences are saved to localStorage</strong></li>
-<li><strong>Full Keyboard Accessibility - All features are keyboard-navigable</strong></li>
-<li><strong>Screen Reader Support - The toggle button's accessible description lists the settings currently active, matching the visual marker on the button</strong></li>
-<li><strong>Privacy-Focused - All data stored locally, nothing sent to servers</strong></li>
+<li><strong>Reset All Settings</strong> - Returns all settings to defaults</li>
+<li><strong>Automatic Settings Persistence</strong> - User preferences are saved to localStorage</li>
+<li><strong>Full Keyboard Accessibility</strong> - All features are keyboard-navigable</li>
+<li><strong>Screen Reader Support</strong> - The toggle button's accessible description lists the settings currently active, matching the visual marker on the button</li>
+<li><strong>Privacy-Focused</strong> - All data stored locally, nothing sent to servers</li>
 </ul>
 <h2>Performance</h2>
 <ul>
