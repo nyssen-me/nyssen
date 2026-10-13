@@ -120,11 +120,6 @@
     margin-bottom: 2.4rem;
 }
 
-/* Utilities*/
-.bg-hightlight {
-    background-color: var(--hgl-secondary);
-}
-
 /* Skip to main content */
 .skip-link {
     position: absolute;
@@ -146,7 +141,7 @@
 /* Divider */
 .divider {
     height: 100%;
-    border-right: 0.15rem solid var(--font-primary);
+    border-right: 0.15rem solid var(--font-color);
 }
 
 /* Columns */

@@ -181,7 +181,6 @@ blockquote cite {
     display: block;
     font-size: var(--font-size-md);
     font-weight: 700;
-    color: var(--cta-primary);
     font-style: normal;
     margin: 0;
 }
