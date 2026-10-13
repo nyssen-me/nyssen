@@ -1,1 +1,3 @@
-<p>Duis commodo exercitation ut duis ipsum non enim magna. Nulla mollit tempor occaecat pariatur. Incididunt cillum proident laborum velit sunt amet consequat. Anim et non eu et. Elit aliquip labore ex velit ullamco magna pariatur deserunt et. Cillum occaecat laborum ad aliquip eiusmod labore officia laboris aliqua elit deserunt sint.</p>
+<div class="page-intro">
+<p class="text-large">I help organisations make their websites and documents accessible to everyone, and keep them that way. Choose a service below to see what's included, or email me at <a href="mailto:hello@nyssen.me">hello@nyssen.me</a> to talk about your project.</p>
+</div>

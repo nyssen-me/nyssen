@@ -19,8 +19,6 @@
 
 	<?php echo Theme::css('assets/css/style.css?ver=1.12'); ?>
 
-    <link rel="canonical" href="https://nyssen.me/">
-
     <!-- Prevent theme flash - applies saved theme before render (no saved theme = system theme) -->
     <script>
         try {
