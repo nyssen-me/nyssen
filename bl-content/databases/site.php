@@ -17,7 +17,7 @@
     "uriCategory": "\/category\/",
     "uriBlog": "",
     "url": "http:\/\/nyssen",
-    "emailFrom": "hello@nyssen",
+    "emailFrom": "hello@nyssen.me",
     "orderBy": "date",
     "currentBuild": 20240806,
     "twitter": "",

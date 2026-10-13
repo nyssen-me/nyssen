@@ -18,9 +18,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-323b1c80f767f40a5755cfb391c1c324": {
         "title": "Accessible Web Design and Development[Autosave]",
@@ -40,9 +46,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-ea469802ef28cf1e5e5de19cc4e8b364": {
         "title": "Elements[Autosave]",
@@ -62,9 +74,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-546a40b4a8f8764a46561566a925fc0f": {
         "title": "Page not found[Autosave]",
@@ -84,9 +102,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "page-not-found": {
         "title": "Page not found",
@@ -517,9 +541,15 @@
         "noindex": false,
         "nofollow": false,
         "noarchive": false,
-        "custom": [
-            false
-        ]
+        "custom": {
+            "0": false,
+            "subtitle": {
+                "value": ""
+            },
+            "externalUrl": {
+                "value": ""
+            }
+        }
     },
     "autosave-e0d2c7be83ad3e4d44c20d1d6d2aca46": {
         "title": "Services[Autosave]",
