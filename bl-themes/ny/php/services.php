@@ -1,4 +1,4 @@
-<main role="main" id="maincontent" class="wrapper">
+<main id="maincontent" class="wrapper">
 
     <section>
         <div class="container container-narrow padding-short padding-top">
@@ -10,9 +10,7 @@
                     <h1 class="page-title"><?php echo $page->title(); ?></h1>
                     
                     <?php if ($page->coverImage()): ?>
-                    <div class="" style="background-image: url('<?php echo $page->coverImage(); ?>'); background-repeat: no-repeat; margin: 0 auto; width: 940px;">
-                        <div style="height: 300px;"></div>
-                    </div>
+                    <img class="cover-image" src="<?php echo $page->coverImage(); ?>" alt="">
                     <?php endif ?>
                 
                     <div class="page-content"><?php echo $page->content(); ?></div>

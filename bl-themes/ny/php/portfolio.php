@@ -1,18 +1,16 @@
 <!-- php/portfolio.php -->
-<main class="content inner cf" role="main">
+<main id="maincontent" class="content inner cf">
     <article class="post post-excerpt">
         
         <!-- Load Bludit Plugins: Page Begin -->
         <?php Theme::plugins('pageBegin'); ?>
         
         <!-- Page title -->
-        <h1 class="page-title">Portfolio template: <?php echo $page->title(); ?></h1>
+        <h1 class="page-title"><?php echo $page->title(); ?></h1>
         
         <!-- Page cover image -->
         <?php if ($page->coverImage()): ?>
-        <div class="" style="background-image: url('<?php echo $page->coverImage(); ?>'); background-repeat: no-repeat; margin: 0 auto; width: 940px;">
-            <div style="height: 300px;"></div>
-        </div>
+        <img class="cover-image" src="<?php echo $page->coverImage(); ?>" alt="">
         <?php endif ?>
     
         <!-- Page content -->
@@ -46,7 +44,7 @@
             <div class="embedded-page">
                 <h2><?php echo $currentPage->title(); ?></h2>
                 
-                <!-- Page cover image -->
+                <!-- Page cover image (alt="": the h2 above already names the project) -->
                 <?php if ($currentPage->coverImage()): ?>
                     <?php
                     // Get image path - coverImage() returns URL, we need the file path
@@ -59,7 +57,7 @@
                     $height = $imageSize ? $imageSize[1] : '';
                     ?>
                     <img src="<?php echo $currentPage->coverImage(); ?>" 
-                        alt="<?php echo $currentPage->title(); ?>"
+                        alt=""
                         class="cover-image"
                         <?php if ($width && $height): ?>
                         width="<?php echo $width; ?>"

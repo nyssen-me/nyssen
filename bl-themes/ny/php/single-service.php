@@ -1,4 +1,4 @@
-<main role="main" id="maincontent" class="wrapper">
+<main id="maincontent" class="wrapper">
 
     <section>
         <div class="container container-narrow padding-short">
