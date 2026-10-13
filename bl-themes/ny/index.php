@@ -31,6 +31,26 @@
         } catch (e) {}
     </script>
 
+    <!-- Google tag (gtag.js), loaded once the page has finished loading so it doesn't slow down first paint.
+         Calls to gtag() before then are queued in dataLayer and sent when the script arrives. -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2NL1HCVV9X');
+
+        window.addEventListener('load', function () {
+            function loadGtag() {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2NL1HCVV9X';
+                document.head.appendChild(s);
+            }
+            if ('requestIdleCallback' in window) requestIdleCallback(loadGtag, { timeout: 3000 });
+            else setTimeout(loadGtag, 1000);
+        });
+    </script>
+
 	<?php Theme::plugins('siteHead'); // Load Bludit Plugins: Site head ?>
 </head>
 
