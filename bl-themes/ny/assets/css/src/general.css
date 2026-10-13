@@ -308,6 +308,13 @@ th:last-child {
     }
 }
 
+/* Smooth scrolling for in-page links (such as back to top), only when motion is welcome */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 /* Reduced motion: switch off transitions and animations site-wide */
 @media (prefers-reduced-motion: reduce) {
     *,

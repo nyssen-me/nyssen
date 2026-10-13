@@ -135,14 +135,8 @@
             // Use passive listener for better scroll performance
             window.addEventListener('scroll', toggleButtonVisibility, { passive: true });
 
-            // Scroll to top on click
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
+            // No click handler: the native #top link moves focus back to the top of the page,
+            // and smooth scrolling comes from CSS so it respects prefers-reduced-motion
 
             // Initial state check
             toggleButtonVisibility();

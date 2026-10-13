@@ -44,7 +44,7 @@
             </ul>
         </nav>
 
-        <a class="top-link hide" href="#top" id="js-top" aria-label="Back to top">
+        <a class="top-link hide" href="#top" id="js-top">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" aria-hidden="true"><path d="M12 6H0l6-6z"/></svg>
             <span class="screen-reader-text">Back to top</span>
         </a>
